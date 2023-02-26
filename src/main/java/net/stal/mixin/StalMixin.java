@@ -1,7 +1,7 @@
-package net.fabricmc.stal.mixin;
+package net.stal.mixin;
 
 import net.minecraft.client.gui.screen.TitleScreen;
-import net.fabricmc.stal.StalAlloys;
+import net.stal.StalAlloys;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

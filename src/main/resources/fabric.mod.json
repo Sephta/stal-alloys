@@ -19,7 +19,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.stal.StalAlloys"
+      "net.stal.StalAlloys"
     ]
   },
   "mixins": [

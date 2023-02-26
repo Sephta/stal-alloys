@@ -1,4 +1,4 @@
-package net.fabricmc.stal;
+package net.stal;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -15,11 +15,14 @@ public class StalAlloys implements ModInitializer {
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LoggerFactory.getLogger("modid");
 
-	public static final  Item STEEL_INGOT = Registry.register(
+	public static final  Item STEEL_INGOT = 
+	Registry.register(
 		Registries.ITEM, 
 		new Identifier("stal", "steel_ingot"), 
 		new Item(new FabricItemSettings())
 	);
+
+	// new SteelIngot(new FabricItemSettings());
 
 	@Override
 	public void onInitialize() {
@@ -29,5 +32,7 @@ public class StalAlloys implements ModInitializer {
 
 		LOGGER.info("Hello World - STAL ALLOYS!");
 
+		// Adding items to ItemGroups
+		// ItemGroupEvents.modifyEntriesEvent(ItemGroups.)
 	}
 }
