@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "stal",
   "version": "${version}",
 
   "name": "STAL Alloys Mod",
@@ -14,7 +14,7 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/stal/icon.png",
 
   "environment": "*",
   "entrypoints": {
@@ -23,7 +23,7 @@
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "stal.mixins.json"
   ],
 
   "depends": {

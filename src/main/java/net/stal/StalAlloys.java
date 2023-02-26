@@ -10,10 +10,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class StalAlloys implements ModInitializer {
-	// This logger is used to write text to the console and the log file.
-	// It is considered best practice to use your mod id as the logger's name.
-	// That way, it's clear which mod wrote info, warnings, and errors.
-	public static final Logger LOGGER = LoggerFactory.getLogger("modid");
+	public static final String MOD_ID = "stal";
+	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	public static final  Item STEEL_INGOT = 
 	Registry.register(
@@ -30,7 +28,7 @@ public class StalAlloys implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Hello World - STAL ALLOYS!");
+		LOGGER.info("Initializing mod: " + MOD_ID);
 
 		// Adding items to ItemGroups
 		// ItemGroupEvents.modifyEntriesEvent(ItemGroups.)
