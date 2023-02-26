@@ -20,7 +20,7 @@ public class StalAlloysBlocks {
       FabricBlockSettings
         .of(Material.STONE)
         .sounds(BlockSoundGroup.STONE)
-        .strength(4.0F)
+        .strength(3.0F, 8.0F)
         .requiresTool(),
       UniformIntProvider.create(3, 8)
     ),
@@ -33,7 +33,7 @@ public class StalAlloysBlocks {
       FabricBlockSettings
         .of(Material.STONE)
         .sounds(BlockSoundGroup.DEEPSLATE)
-        .strength(4.0F)
+        .strength(4.5F, 8.0F)
         .requiresTool(),
       UniformIntProvider.create(4, 9)
     ),
@@ -46,7 +46,7 @@ public class StalAlloysBlocks {
       FabricBlockSettings
         .of(Material.METAL)
         .sounds(BlockSoundGroup.METAL)
-        .strength(4.0F)
+        .strength(5.0F, 8.0F)
         .requiresTool()
     ),
     StalAlloysItemGroup.STAL_ALLOYS

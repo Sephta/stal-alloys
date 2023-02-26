@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "stal:steel_ore",
+    "stal:deepslate_steel_ore",
+    "stal:steel_block"
+  ]
+}

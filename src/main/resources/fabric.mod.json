@@ -23,6 +23,9 @@
     ],
     "client": [
       "net.stal.StalAlloysClient"
+    ],
+    "fabric-datagen": [
+      "net.stal.StalAlloysDataGenerator"
     ]
   },
   "mixins": [
