@@ -4,7 +4,9 @@
 
   "block.stal.steel_ore": "Steel Ore",
   "block.stal.deepslate_steel_ore": "Deepslate Steel Ore",
+  "block.stal.netherrack_steel_ore": "Netherrack Steel Ore",
+  "block.stal.endstone_steel_ore": "Endstone Steel Ore",
   "block.stal.steel_block": "Block of Steel",
 
-  "itemgroup.stal": "Stal Alloys"
+  "itemgroup.stal": "STAL Alloys"
 }
