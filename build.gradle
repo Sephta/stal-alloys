@@ -1,6 +1,7 @@
 plugins {
 	id 'fabric-loom' version '1.1-SNAPSHOT'
 	id 'maven-publish'
+	
 }
 
 sourceCompatibility = JavaVersion.VERSION_17
@@ -26,16 +27,14 @@ loom {
             name "Data Generation"
             vmArg "-Dfabric-api.datagen"
             vmArg "-Dfabric-api.datagen.output-dir=${file("src/main/generated")}"
-            vmArg "-Dfabric-api.datagen.modid=stal"
+            vmArg "-Dfabric-api.datagen.modid=stal-alloys"
  
             runDir "build/datagen"
         }
     }
 }
- 
-//
-// Adds the generated files into the jar you distribute to players.
-//
+
+// Add the generated resources to the main source set
 sourceSets {
     main {
         resources {
@@ -45,7 +44,6 @@ sourceSets {
         }
     }
 }
-
 dependencies {
 	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
@@ -54,7 +52,7 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-
+	
 	// Uncomment the following line to enable the deprecated Fabric API modules. 
 	// These are included in the Fabric API production distribution and allow you to update your mod to the latest modules at a later more convenient time.
 
@@ -70,7 +68,6 @@ processResources {
 }
 
 tasks.withType(JavaCompile).configureEach {
-	// Minecraft 1.18 (1.18-pre2) upwards uses Java 17.
 	it.options.release = 17
 }
 

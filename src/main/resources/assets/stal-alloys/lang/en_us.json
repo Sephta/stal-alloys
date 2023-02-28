@@ -1,0 +1,12 @@
+{
+  "item.stal-alloys.steel_ingot": "Steel Ingot",
+  "item.stal-alloys.raw_steel": "Raw Steel",
+
+  "block.stal-alloys.steel_ore": "Steel Ore",
+  "block.stal-alloys.deepslate_steel_ore": "Deepslate Steel Ore",
+  "block.stal-alloys.netherrack_steel_ore": "Netherrack Steel Ore",
+  "block.stal-alloys.endstone_steel_ore": "Endstone Steel Ore",
+  "block.stal-alloys.steel_block": "Block of Steel",
+
+  "itemGroup.stal-alloys.stal_alloys": "STAL Alloys"
+}

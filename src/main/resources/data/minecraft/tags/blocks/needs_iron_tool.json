@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "stal:steel_block",
-    "stal:steel_ore",
-    "stal:deepslate_steel_ore",
-    "stal:netherrack_steel_ore",
-    "stal:endstone_steel_ore"
+    "stal-alloys:steel_block",
+    "stal-alloys:steel_ore",
+    "stal-alloys:deepslate_steel_ore",
+    "stal-alloys:netherrack_steel_ore",
+    "stal-alloys:endstone_steel_ore"
   ]
 }
