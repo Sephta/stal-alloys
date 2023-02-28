@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 import net.stal.block.StalAlloysBlocks;
 import net.stal.item.StalAlloysItemGroup;
 import net.stal.item.StalAlloysItems;
+import net.stal.world.gen.StalAlloysWorldGen;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,8 +16,13 @@ public class StalAlloys implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Initializing mod: " + MOD_ID);
+
+		// Registries
 		StalAlloysItemGroup.registerModItemGroups();
+
 		StalAlloysItems.registerModItems();
 		StalAlloysBlocks.registerModBlocks();
+
+		// StalAlloysWorldGen.generateWorldGen();
 	}
 }

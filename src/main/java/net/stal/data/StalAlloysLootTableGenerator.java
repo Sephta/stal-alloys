@@ -2,7 +2,6 @@ package net.stal.data;
 
 import net.fabricmc.fabric.api.datagen.v1.*;
 import net.fabricmc.fabric.api.datagen.v1.provider.*;
-import net.stal.StalAlloys;
 import net.stal.block.StalAlloysBlocks;
 import net.stal.item.StalAlloysItems;
 
@@ -16,10 +15,7 @@ public class StalAlloysLootTableGenerator extends FabricBlockLootTableProvider {
 
     addDrop(StalAlloysBlocks.STEEL_BLOCK);
 
-    oreDrops(StalAlloysBlocks.STEEL_ORE, StalAlloysItems.RAW_STEEL);
-    oreDrops(StalAlloysBlocks.DEEPSLATE_STEEL_ORE, StalAlloysItems.RAW_STEEL);
+    addDrop(StalAlloysBlocks.STEEL_ORE, oreDrops(StalAlloysBlocks.STEEL_ORE, StalAlloysItems.RAW_STEEL));
+    addDrop(StalAlloysBlocks.DEEPSLATE_STEEL_ORE, oreDrops(StalAlloysBlocks.DEEPSLATE_STEEL_ORE, StalAlloysItems.RAW_STEEL));
   }
-
-  @Override
-  public String getName() { return StalAlloys.MOD_ID; }
 }

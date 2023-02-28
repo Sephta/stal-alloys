@@ -46,7 +46,4 @@ public class StalAlloysRecipeGenerator extends FabricRecipeProvider {
       StalAlloysBlocks.STEEL_BLOCK
     );
   }
-
-  @Override
-  public String getName() { return StalAlloys.MOD_ID; }
 }

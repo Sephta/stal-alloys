@@ -5,7 +5,6 @@ import net.fabricmc.fabric.api.datagen.v1.provider.*;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
-import net.stal.StalAlloys;
 import net.stal.block.StalAlloysBlocks;
 import net.stal.item.StalAlloysItems;
 
@@ -26,8 +25,4 @@ public class StalAlloysModelProvider extends FabricModelProvider {
     itemModelGenerator.register(StalAlloysItems.STEEL_INGOT, Models.GENERATED);
     itemModelGenerator.register(StalAlloysItems.RAW_STEEL, Models.GENERATED);
   }
-
-
-  @Override
-  public String getName() { return StalAlloys.MOD_ID; }
 }

@@ -4,6 +4,7 @@ import java.util.concurrent.CompletableFuture;
 
 import net.fabricmc.fabric.api.datagen.v1.*;
 import net.fabricmc.fabric.api.datagen.v1.provider.*;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.RegistryWrapper.WrapperLookup;
 import net.stal.StalAlloys;
@@ -16,7 +17,8 @@ public class StalAlloysWorldGenerator extends FabricDynamicRegistryProvider {
   
   @Override
   protected void configure(WrapperLookup registries, Entries entries) {
-    // Here goes future world gen
+    entries.addAll(registries.getWrapperOrThrow(RegistryKeys.CONFIGURED_FEATURE));
+    entries.addAll(registries.getWrapperOrThrow(RegistryKeys.PLACED_FEATURE));
   }
 
   @Override
