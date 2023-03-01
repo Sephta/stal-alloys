@@ -174,6 +174,19 @@ public class StalAlloysBlocks {
     StalAlloysItemGroup.STAL_ALLOYS
   );
 
+  public static final Block DEEPSLATE_CARBON_ORE = registerBlock(
+    "deepslate_carbon_ore", 
+    new OreBlock(
+      FabricBlockSettings
+        .of(Material.STONE)
+        .sounds(BlockSoundGroup.DEEPSLATE)
+        .strength(4.5F, 8.0F)
+        .requiresTool(),
+      UniformIntProvider.create(4, 9)
+    ),
+    StalAlloysItemGroup.STAL_ALLOYS
+  );
+
   private static Block registerBlock(String name, Block block, ItemGroup group) {
     registerBlockItem(name, block, group);
 
