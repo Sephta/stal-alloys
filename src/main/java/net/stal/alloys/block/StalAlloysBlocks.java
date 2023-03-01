@@ -187,6 +187,60 @@ public class StalAlloysBlocks {
     StalAlloysItemGroup.STAL_ALLOYS
   );
 
+  // Block: Zinc
+  public static final Block ZINC_ORE = registerBlock(
+    "zinc_ore", 
+    new OreBlock(
+      FabricBlockSettings
+        .of(Material.STONE)
+        .sounds(BlockSoundGroup.STONE)
+        .strength(3.0F, 8.0F)
+        .requiresTool(),
+      UniformIntProvider.create(3, 8)
+    ),
+    StalAlloysItemGroup.STAL_ALLOYS
+  );
+
+  public static final Block DEEPSLATE_ZINC_ORE = registerBlock(
+    "deepslate_zinc_ore", 
+    new OreBlock(
+      FabricBlockSettings
+        .of(Material.STONE)
+        .sounds(BlockSoundGroup.DEEPSLATE)
+        .strength(4.5F, 8.0F)
+        .requiresTool(),
+      UniformIntProvider.create(4, 9)
+    ),
+    StalAlloysItemGroup.STAL_ALLOYS
+  );
+
+  // Block: Tin
+  public static final Block TIN_ORE = registerBlock(
+    "tin_ore", 
+    new OreBlock(
+      FabricBlockSettings
+        .of(Material.STONE)
+        .sounds(BlockSoundGroup.STONE)
+        .strength(3.0F, 8.0F)
+        .requiresTool(),
+      UniformIntProvider.create(3, 8)
+    ),
+    StalAlloysItemGroup.STAL_ALLOYS
+  );
+
+  public static final Block DEEPSLATE_TIN_ORE = registerBlock(
+    "deepslate_tin_ore", 
+    new OreBlock(
+      FabricBlockSettings
+        .of(Material.STONE)
+        .sounds(BlockSoundGroup.DEEPSLATE)
+        .strength(4.5F, 8.0F)
+        .requiresTool(),
+      UniformIntProvider.create(4, 9)
+    ),
+    StalAlloysItemGroup.STAL_ALLOYS
+  );
+
   private static Block registerBlock(String name, Block block, ItemGroup group) {
     registerBlockItem(name, block, group);
 

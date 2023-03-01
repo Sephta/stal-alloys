@@ -7,7 +7,10 @@
   "item.stal-alloys.raw_chromium": "Raw Chromium",
   "item.stal-alloys.carbon_plate": "Carbon Ingot",
   "item.stal-alloys.raw_carbon": "Raw Carbon",
-
+  "item.stal-alloys.zinc_ingot": "Zinc Ingot",
+  "item.stal-alloys.raw_zinc": "Raw Zinc",
+  "item.stal-alloys.tin_ingot": "Tin Ingot",
+  "item.stal-alloys.raw_tin": "Raw Tin",
 
   "block.stal-alloys.steel_ore": "Steel Ore",
   "block.stal-alloys.deepslate_steel_ore": "Deepslate Steel Ore",
@@ -22,6 +25,10 @@
   "block.stal-alloys.netherrack_chromium_ore": "Netherrack Chromium Ore",
   "block.stal-alloys.carbon_ore": "Carbon Ore",
   "block.stal-alloys.deepslate_carbon_ore": "Deepslate Carbon Ore",
+  "block.stal-alloys.zinc_ore": "Zinc Ore",
+  "block.stal-alloys.deepslate_zinc_ore": "Deepslate Zinc Ore",
+  "block.stal-alloys.tin_ore": "Tin Ore",
+  "block.stal-alloys.deepslate_tin_ore": "Deepslate Tin Ore",
 
   "itemGroup.stal-alloys.stal_alloys": "STAL Alloys"
 }
