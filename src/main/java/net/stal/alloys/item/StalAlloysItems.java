@@ -11,6 +11,15 @@ public class StalAlloysItems {
   public static final Item RAW_STEEL = registerItem("raw_steel", new Item(new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
   public static final Item STEEL_INGOT = registerItem("steel_ingot", new Item(new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
 
+  public static final Item RAW_NICKEL = registerItem("raw_nickel", new Item(new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
+  public static final Item NICKEL_INGOT = registerItem("nickel_ingot", new Item(new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
+
+  public static final Item RAW_CHROMIUM = registerItem("raw_chromium", new Item(new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
+  public static final Item CHROMIUM_INGOT = registerItem("chromium_ingot", new Item(new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
+
+  public static final Item RAW_CARBON = registerItem("raw_carbon", new Item(new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
+  public static final Item CARBON_PLATE = registerItem("carbon_plate", new Item(new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
+
   private static Item registerItem(String name, Item item) {
     return Registry.register(Registry.ITEM, new Identifier(StalAlloys.MOD_ID, name), item);
   }
