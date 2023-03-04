@@ -29,6 +29,10 @@
   "block.stal-alloys.deepslate_zinc_ore": "Deepslate Zinc Ore",
   "block.stal-alloys.tin_ore": "Tin Ore",
   "block.stal-alloys.deepslate_tin_ore": "Deepslate Tin Ore",
+  "block.stal-alloys.alloy_smelter" : "Alloy Smelter",
+
+  "container.stal-alloys.alloy_smelter" : "Alloy Smelter",
+
 
   "itemGroup.stal-alloys.stal_alloys": "STAL Alloys"
 }

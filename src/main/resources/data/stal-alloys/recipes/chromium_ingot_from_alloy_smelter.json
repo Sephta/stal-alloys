@@ -1,0 +1,11 @@
+{
+  "type": "stal-alloys:alloy_smelter",
+  "ingredients": [
+    {
+      "item": "stal-alloys:raw_chromium"
+    }
+  ],
+  "output": {
+    "item": "stal-alloys:chromium_ingot"
+  }
+}

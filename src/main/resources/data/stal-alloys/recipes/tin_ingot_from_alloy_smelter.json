@@ -1,0 +1,11 @@
+{
+  "type": "stal-alloys:alloy_smelter",
+  "ingredients": [
+    {
+      "item": "stal-alloys:raw_tin"
+    }
+  ],
+  "output": {
+    "item": "stal-alloys:tin_ingot"
+  }
+}

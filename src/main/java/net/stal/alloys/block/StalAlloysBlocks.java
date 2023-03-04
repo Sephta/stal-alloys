@@ -241,6 +241,19 @@ public class StalAlloysBlocks {
     StalAlloysItemGroup.STAL_ALLOYS
   );
 
+  // Blocks for Block Entities
+  public static final Block ALLOY_SMELTER = registerBlock(
+    "alloy_smelter",
+    new AlloySmelterBlock(
+      FabricBlockSettings
+        .of(Material.STONE)
+        .sounds(BlockSoundGroup.DEEPSLATE)
+        .strength(4.5F, 8.0F)
+        .requiresTool()
+    ),
+    StalAlloysItemGroup.STAL_ALLOYS
+  );
+
   private static Block registerBlock(String name, Block block, ItemGroup group) {
     registerBlockItem(name, block, group);
 

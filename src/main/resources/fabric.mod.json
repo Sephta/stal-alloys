@@ -18,6 +18,9 @@
 		"main": [
 			"net.stal.alloys.StalAlloys"
 		],
+		"client": [
+			"net.stal.alloys.StalAlloysClient"
+		],
 		"fabric-datagen": [
 			"net.stal.alloys.StalAlloysDataGenerator"
 		]
