@@ -1,6 +1,6 @@
 {
   "type": "stal-alloys:alloy_smelter",
-  "cookingtime": 300,
+  "cookingtime": 200,
   "experience": 1,
   "ingredients": [
     {
