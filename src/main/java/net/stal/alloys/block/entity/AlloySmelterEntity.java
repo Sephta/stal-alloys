@@ -1,5 +1,6 @@
 package net.stal.alloys.block.entity;
 
+import java.util.Collection;
 import java.util.Optional;
 
 import net.minecraft.block.BlockState;
@@ -11,6 +12,7 @@ import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
+import net.minecraft.recipe.Recipe;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
@@ -19,6 +21,7 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.stal.alloys.screen.AlloySmelterScreenHandler;
+import net.stal.alloys.StalAlloys;
 import net.stal.alloys.recipe.*;
 
 public class AlloySmelterEntity extends BlockEntity implements NamedScreenHandlerFactory, ImplementedInventory {
@@ -27,7 +30,7 @@ public class AlloySmelterEntity extends BlockEntity implements NamedScreenHandle
 
   protected final PropertyDelegate mPropertyDelegate;
   private int mProgress = 0;
-  private int mMaxProgress = 72;
+  private int mMaxProgress = 200; // Number of ticks it takes to smelt
   // private int mFuelTime = 0;
   // private int mMaxFuelTime = 0;
 
@@ -132,6 +135,10 @@ public class AlloySmelterEntity extends BlockEntity implements NamedScreenHandle
     Optional<AlloySmelterRecipe> recipeFromInventory = entity.getWorld()
                                                 .getRecipeManager()
                                                 .getFirstMatch(AlloySmelterRecipe.Type.INSTANCE, inventory, entity.getWorld());
+    
+    if (recipeFromInventory.isPresent()) {
+      entity.mMaxProgress = recipeFromInventory.get().getCookingTime();
+    }
 
     return recipeFromInventory.isPresent() && 
            canInsertAmountIntoOutputSlot(inventory) && 

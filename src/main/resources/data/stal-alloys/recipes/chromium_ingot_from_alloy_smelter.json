@@ -1,11 +1,13 @@
 {
   "type": "stal-alloys:alloy_smelter",
+  "cookingtime": 240,
+  "experience": 1,
   "ingredients": [
     {
       "item": "stal-alloys:raw_chromium"
     }
   ],
-  "output": {
+  "result": {
     "item": "stal-alloys:chromium_ingot"
   }
 }

@@ -17,12 +17,28 @@ public class AlloySmelterRecipe implements Recipe<SimpleInventory> {
 
   private final Identifier mID;
   private final ItemStack mOutput;
+  private final int mCookingTime;
+  private final int mExperience;
   private final DefaultedList<Ingredient> mRecipeItems;
 
-  public AlloySmelterRecipe(Identifier id, ItemStack output, DefaultedList<Ingredient> recipeItems) {
+  private enum AlloySmelterRecipeAttributes {
+    INGREDIENTS("ingredients"),
+    COOKINGTIME("cookingtime"),
+    EXPERIENCE("experience"),
+    RESULT("result");
+
+    private String value;
+    private AlloySmelterRecipeAttributes(String value) {
+      this.value = value;
+    }
+  }
+
+  public AlloySmelterRecipe(Identifier id, ItemStack output, DefaultedList<Ingredient> recipeItems, int cookingtime, int experience) {
     mID = id;
     mOutput = output;
     mRecipeItems = recipeItems;
+    mCookingTime = cookingtime;
+    mExperience = experience;
   }
 
   @Override
@@ -33,7 +49,7 @@ public class AlloySmelterRecipe implements Recipe<SimpleInventory> {
   }
 
   @Override
-  public ItemStack craft(SimpleInventory var1) {
+  public ItemStack craft(SimpleInventory inventory) {
     return mOutput;
   }
 
@@ -45,6 +61,14 @@ public class AlloySmelterRecipe implements Recipe<SimpleInventory> {
   @Override
   public ItemStack getOutput() {
     return mOutput.copy();
+  }
+
+  public int getCookingTime() {
+    return mCookingTime;
+  }
+
+  public int getExperience() {
+    return mExperience;
   }
 
   @Override
@@ -75,25 +99,29 @@ public class AlloySmelterRecipe implements Recipe<SimpleInventory> {
     @Override
     public AlloySmelterRecipe read(Identifier id, JsonObject json) {
       DefaultedList<Ingredient> inputs = DefaultedList.ofSize(1, Ingredient.EMPTY);
-      ItemStack output = ShapedRecipe.outputFromJson(JsonHelper.getObject(json, "output"));
-      JsonArray ingredients = JsonHelper.getArray(json, "ingredients");
+      ItemStack output = ShapedRecipe.outputFromJson(JsonHelper.getObject(json, AlloySmelterRecipeAttributes.RESULT.value));
+      JsonArray ingredients = JsonHelper.getArray(json, AlloySmelterRecipeAttributes.INGREDIENTS.value);
+      int cookingtime = JsonHelper.getInt(json, AlloySmelterRecipeAttributes.COOKINGTIME.value);
+      int experience = JsonHelper.getInt(json, AlloySmelterRecipeAttributes.EXPERIENCE.value);
 
       for (int i = 0; i < inputs.size(); i++) {
         inputs.set(i, Ingredient.fromJson(ingredients.get(i)));
       }
 
-      return new AlloySmelterRecipe(id, output, inputs);
+      return new AlloySmelterRecipe(id, output, inputs, cookingtime, experience);
     }
 
     @Override
     public AlloySmelterRecipe read(Identifier id, PacketByteBuf buf) {
       DefaultedList<Ingredient> inputs = DefaultedList.ofSize(buf.readInt(), Ingredient.EMPTY);
+      int cookingtime = buf.readInt();
+      int experience = buf.readInt();
 
       for (int i = 0; i < inputs.size(); i++) {
         inputs.set(i, Ingredient.fromPacket(buf));
       }
 
-      return new AlloySmelterRecipe(id, /* output --> */ buf.readItemStack(), inputs);
+      return new AlloySmelterRecipe(id, /* output --> */ buf.readItemStack(), inputs, cookingtime, experience);
     }
 
     @Override
@@ -105,6 +133,9 @@ public class AlloySmelterRecipe implements Recipe<SimpleInventory> {
       }
 
       buf.writeItemStack(recipe.getOutput());
+
+      buf.writeInt(recipe.getCookingTime());
+      buf.writeInt(recipe.getExperience());
     }
 
     

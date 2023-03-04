@@ -1,11 +1,13 @@
 {
   "type": "stal-alloys:alloy_smelter",
+  "cookingtime": 100,
+  "experience": 1,
   "ingredients": [
     {
       "item": "stal-alloys:raw_tin"
     }
   ],
-  "output": {
+  "result": {
     "item": "stal-alloys:tin_ingot"
   }
 }

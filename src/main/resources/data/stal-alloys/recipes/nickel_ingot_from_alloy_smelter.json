@@ -1,11 +1,13 @@
 {
   "type": "stal-alloys:alloy_smelter",
+  "cookingtime": 200,
+  "experience": 1,
   "ingredients": [
     {
       "item": "stal-alloys:raw_nickel"
     }
   ],
-  "output": {
+  "result": {
     "item": "stal-alloys:nickel_ingot"
   }
 }
