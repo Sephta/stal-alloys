@@ -16,6 +16,7 @@ import net.minecraft.recipe.Recipe;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
+import net.minecraft.text.MutableText;
 import net.minecraft.text.Text;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
@@ -83,7 +84,7 @@ public class AlloySmelterEntity extends BlockEntity implements NamedScreenHandle
 
   @Override
   public Text getDisplayName() {
-    return Text.translatable("alloy_smelter");
+    return Text.literal("Alloy Smelter");
   }
 
   @Override
