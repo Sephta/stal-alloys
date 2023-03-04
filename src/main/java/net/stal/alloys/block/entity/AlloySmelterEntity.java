@@ -21,12 +21,14 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.stal.alloys.screen.AlloySmelterScreenHandler;
-import net.stal.alloys.StalAlloys;
 import net.stal.alloys.recipe.*;
 
 public class AlloySmelterEntity extends BlockEntity implements NamedScreenHandlerFactory, ImplementedInventory {
+  public static final int mAlloySmelterProgressBarWidth = 44;
+  public static final int mAlloySmelterProgressBarHeight = 17;
+  public static final int mAlloySmelterInventorySize = 3;
 
-  private final DefaultedList<ItemStack> mInventory = DefaultedList.ofSize(2, ItemStack.EMPTY);
+  private final DefaultedList<ItemStack> mInventory = DefaultedList.ofSize(mAlloySmelterInventorySize, ItemStack.EMPTY);
 
   protected final PropertyDelegate mPropertyDelegate;
   private int mProgress = 0;
@@ -34,12 +36,10 @@ public class AlloySmelterEntity extends BlockEntity implements NamedScreenHandle
   // private int mFuelTime = 0;
   // private int mMaxFuelTime = 0;
 
-  public static final int mAlloySmelterProgressBarWidth = 44;
-  public static final int mAlloySmelterProgressBarHeight = 17;
-
   public static enum AlloySmelterInventorySlots {
     FIRST(0),
-    SECOND(1);
+    SECOND(1),
+    THIRD(2);
 
     private final int value;
     private AlloySmelterInventorySlots(int value) {
@@ -158,12 +158,13 @@ public class AlloySmelterEntity extends BlockEntity implements NamedScreenHandle
 
     if (hasRecipe(entity)) {
       entity.removeStack(AlloySmelterInventorySlots.FIRST.value, 1);
+      entity.removeStack(AlloySmelterInventorySlots.SECOND.value, 1);
 
       entity.setStack(
-        AlloySmelterInventorySlots.SECOND.value, 
+        AlloySmelterInventorySlots.THIRD.value, 
         new ItemStack(
           recipeFromInventory.get().getOutput().getItem(), 
-          entity.getStack(AlloySmelterInventorySlots.SECOND.value).getCount() + 1
+          entity.getStack(AlloySmelterInventorySlots.THIRD.value).getCount() + 1
         )
       );
 
@@ -172,13 +173,13 @@ public class AlloySmelterEntity extends BlockEntity implements NamedScreenHandle
   }
 
   private static boolean canInsertItemIntoOutputSlot(SimpleInventory inventory, Item output) {
-    return inventory.getStack(AlloySmelterInventorySlots.SECOND.value).getItem() == output || 
-           inventory.getStack(AlloySmelterInventorySlots.SECOND.value).isEmpty();
+    return inventory.getStack(AlloySmelterInventorySlots.THIRD.value).getItem() == output || 
+           inventory.getStack(AlloySmelterInventorySlots.THIRD.value).isEmpty();
   }
 
   private static boolean canInsertAmountIntoOutputSlot(SimpleInventory inventory) {
-    return inventory.getStack(AlloySmelterInventorySlots.SECOND.value).getMaxCount() > 
-           (inventory.getStack(AlloySmelterInventorySlots.SECOND.value).getCount());
+    return inventory.getStack(AlloySmelterInventorySlots.THIRD.value).getMaxCount() > 
+           (inventory.getStack(AlloySmelterInventorySlots.THIRD.value).getCount());
   }
 
 }

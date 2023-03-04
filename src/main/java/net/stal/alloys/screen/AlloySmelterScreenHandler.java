@@ -17,20 +17,26 @@ public class AlloySmelterScreenHandler extends ScreenHandler {
   private final PropertyDelegate mPropertyDelegate;
 
   public AlloySmelterScreenHandler(int syncId, PlayerInventory playerInventory) {
-    this(syncId, playerInventory, new SimpleInventory(2), new ArrayPropertyDelegate(2));
+    this(
+      syncId, 
+      playerInventory, 
+      new SimpleInventory(AlloySmelterEntity.mAlloySmelterInventorySize), 
+      new ArrayPropertyDelegate(2)
+    );
   }
 
   public AlloySmelterScreenHandler(int syncId, PlayerInventory playerInventory, Inventory inventory, PropertyDelegate delegate) {
     super(StalAlloysScreenHandlers.ALLOY_SMELTER_SCREEN_HANDLER, syncId);
 
-    checkSize(inventory, 2);
+    checkSize(inventory, AlloySmelterEntity.mAlloySmelterInventorySize);
     this.mInventory = inventory;
     inventory.onOpen(playerInventory.player);
     this.mPropertyDelegate = delegate;
 
     // Add Custom Alloy Smelter Slots
-    addSlot(new Slot(inventory, 0, 39, 31));
-    addSlot(new Slot(inventory, 1, 121, 31));
+    addSlot(new Slot(inventory, 0, 39, 19));
+    addSlot(new Slot(inventory, 1, 39, 48));
+    addSlot(new Slot(inventory, 2, 121, 35));
 
     addPlayerInventory(playerInventory);
     addPlayerHotBar(playerInventory);

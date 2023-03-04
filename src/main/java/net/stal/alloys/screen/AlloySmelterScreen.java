@@ -40,11 +40,14 @@ public class AlloySmelterScreen extends HandledScreen<AlloySmelterScreenHandler>
   }
 
   private void renderProgressionArrow(MatrixStack matrices, int x, int y) {
+    final int progressBarXPos = 66;
+    final int progressBarYPos = 34;
+    
     if (handler.isCrafting()) {
       drawTexture(
         matrices, 
-        x + 66, 
-        y + 30, 
+        x + progressBarXPos, 
+        y + progressBarYPos, 
         176, 
         0, 
         handler.getScaledProgress(), 

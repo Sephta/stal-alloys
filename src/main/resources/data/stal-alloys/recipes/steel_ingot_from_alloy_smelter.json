@@ -4,10 +4,13 @@
   "experience": 1,
   "ingredients": [
     {
-      "item": "stal-alloys:raw_zinc"
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "stal-alloys:carbon_plate"
     }
   ],
   "result": {
-    "item": "stal-alloys:zinc_ingot"
+    "item": "stal-alloys:steel_ingot"
   }
 }

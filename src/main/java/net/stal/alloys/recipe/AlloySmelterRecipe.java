@@ -33,6 +33,9 @@ public class AlloySmelterRecipe implements Recipe<SimpleInventory> {
     }
   }
 
+  private static final int mNumberOfInputs = 2;
+  private static final int mNumberOfOutputs = 1;
+
   public AlloySmelterRecipe(Identifier id, ItemStack output, DefaultedList<Ingredient> recipeItems, int cookingtime, int experience) {
     mID = id;
     mOutput = output;
@@ -45,7 +48,8 @@ public class AlloySmelterRecipe implements Recipe<SimpleInventory> {
   public boolean matches(SimpleInventory inventory, World world) {
     if (world.isClient()) return false;
 
-    return mRecipeItems.get(0).test(inventory.getStack(0 /* 0 is the first slot */));
+    return mRecipeItems.get(0).test(inventory.getStack(0 /* 0 is the first slot */)) && 
+           mRecipeItems.get(1).test(inventory.getStack(1 /* 1 is the second slot */));
   }
 
   @Override
@@ -98,7 +102,7 @@ public class AlloySmelterRecipe implements Recipe<SimpleInventory> {
 
     @Override
     public AlloySmelterRecipe read(Identifier id, JsonObject json) {
-      DefaultedList<Ingredient> inputs = DefaultedList.ofSize(1, Ingredient.EMPTY);
+      DefaultedList<Ingredient> inputs = DefaultedList.ofSize(mNumberOfInputs, Ingredient.EMPTY);
       ItemStack output = ShapedRecipe.outputFromJson(JsonHelper.getObject(json, AlloySmelterRecipeAttributes.RESULT.value));
       JsonArray ingredients = JsonHelper.getArray(json, AlloySmelterRecipeAttributes.INGREDIENTS.value);
       int cookingtime = JsonHelper.getInt(json, AlloySmelterRecipeAttributes.COOKINGTIME.value);
