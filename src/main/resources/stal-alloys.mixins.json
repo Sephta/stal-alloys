@@ -3,7 +3,8 @@
 	"package": "net.stal.alloys.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"StalAlloysEntityDataSaverMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
