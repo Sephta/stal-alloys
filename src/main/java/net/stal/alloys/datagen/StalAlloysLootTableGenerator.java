@@ -20,11 +20,34 @@ public class StalAlloysLootTableGenerator extends SimpleFabricLootTableProvider 
 
   @Override
   public void accept(BiConsumer<Identifier, Builder> biConsumer) {
-    biConsumer.accept(new Identifier(StalAlloys.MOD_ID, "blocks/steel_block"), BlockLootTableGenerator.drops(StalAlloysBlocks.STEEL_BLOCK, ConstantLootNumberProvider.create(1.0F)));
-    biConsumer.accept(new Identifier(StalAlloys.MOD_ID, "blocks/steel_ore"), BlockLootTableGenerator.drops(StalAlloysItems.RAW_STEEL, UniformLootNumberProvider.create(1.0F, 4.0F)));
-    biConsumer.accept(new Identifier(StalAlloys.MOD_ID, "blocks/deepslate_steel_ore"), BlockLootTableGenerator.drops(StalAlloysBlocks.STEEL_BLOCK, UniformLootNumberProvider.create(1.0F, 4.0F)));
-    biConsumer.accept(new Identifier(StalAlloys.MOD_ID, "blocks/netherrack_steel_ore"), BlockLootTableGenerator.drops(StalAlloysBlocks.STEEL_BLOCK, UniformLootNumberProvider.create(1.0F, 4.0F)));
-    biConsumer.accept(new Identifier(StalAlloys.MOD_ID, "blocks/endstone_steel_ore"), BlockLootTableGenerator.drops(StalAlloysBlocks.STEEL_BLOCK, UniformLootNumberProvider.create(1.0F, 4.0F)));
+    // Steel
+    // biConsumer.accept(new Identifier(StalAlloys.MOD_ID, "blocks/steel_block"), BlockLootTableGenerator.drops(StalAlloysBlocks.STEEL_BLOCK, ConstantLootNumberProvider.create(1.0F)));
+    // biConsumer.accept(new Identifier(StalAlloys.MOD_ID, "blocks/steel_ore"), BlockLootTableGenerator.drops(StalAlloysBlocks.STEEL_ORE, StalAlloysItems.RAW_STEEL, UniformLootNumberProvider.create(1.0F, 4.0F)));
+    // biConsumer.accept(new Identifier(StalAlloys.MOD_ID, "blocks/deepslate_steel_ore"), BlockLootTableGenerator.drops(StalAlloysBlocks.DEEPSLATE_STEEL_ORE, StalAlloysItems.RAW_STEEL, UniformLootNumberProvider.create(1.0F, 4.0F)));
+    // biConsumer.accept(new Identifier(StalAlloys.MOD_ID, "blocks/netherrack_steel_ore"), BlockLootTableGenerator.drops(StalAlloysBlocks.NETHERRACK_STEEL_ORE, StalAlloysItems.RAW_STEEL, UniformLootNumberProvider.create(1.0F, 4.0F)));
+    // biConsumer.accept(new Identifier(StalAlloys.MOD_ID, "blocks/endstone_steel_ore"), BlockLootTableGenerator.drops(StalAlloysBlocks.ENDSTONE_STEEL_ORE, StalAlloysItems.RAW_STEEL, UniformLootNumberProvider.create(1.0F, 4.0F)));
+
+    // Nickel
+    biConsumer.accept(new Identifier(StalAlloys.MOD_ID, "blocks/nickel_ore"), BlockLootTableGenerator.drops(StalAlloysBlocks.NICKEL_ORE, StalAlloysItems.RAW_NICKEL, ConstantLootNumberProvider.create(1.0F)));
+    biConsumer.accept(new Identifier(StalAlloys.MOD_ID, "blocks/deepslate_nickel_ore"), BlockLootTableGenerator.drops(StalAlloysBlocks.DEEPSLATE_NICKEL_ORE, StalAlloysItems.RAW_NICKEL, ConstantLootNumberProvider.create(1.0F)));
+    biConsumer.accept(new Identifier(StalAlloys.MOD_ID, "blocks/netherrack_nickel_ore"), BlockLootTableGenerator.drops(StalAlloysBlocks.NETHERRACK_NICKEL_ORE, StalAlloysItems.RAW_NICKEL, ConstantLootNumberProvider.create(1.0F)));
+
+    // Chromium
+    biConsumer.accept(new Identifier(StalAlloys.MOD_ID, "blocks/chromium_ore"), BlockLootTableGenerator.drops(StalAlloysBlocks.CHROMIUM_ORE, StalAlloysItems.RAW_CHROMIUM, ConstantLootNumberProvider.create(1.0F)));
+    biConsumer.accept(new Identifier(StalAlloys.MOD_ID, "blocks/deepslate_chromium_ore"), BlockLootTableGenerator.drops(StalAlloysBlocks.DEEPSLATE_CHROMIUM_ORE, StalAlloysItems.RAW_CHROMIUM, ConstantLootNumberProvider.create(1.0F)));
+    biConsumer.accept(new Identifier(StalAlloys.MOD_ID, "blocks/netherrack_chromium_ore"), BlockLootTableGenerator.drops(StalAlloysBlocks.NETHERRACK_CHROMIUM_ORE, StalAlloysItems.RAW_CHROMIUM, ConstantLootNumberProvider.create(1.0F)));
+
+    // Zinc
+    biConsumer.accept(new Identifier(StalAlloys.MOD_ID, "blocks/zinc_ore"), BlockLootTableGenerator.drops(StalAlloysBlocks.ZINC_ORE, StalAlloysItems.RAW_ZINC, UniformLootNumberProvider.create(1.0F, 2.0F)));
+    biConsumer.accept(new Identifier(StalAlloys.MOD_ID, "blocks/deepslate_zinc_ore"), BlockLootTableGenerator.drops(StalAlloysBlocks.DEEPSLATE_ZINC_ORE, StalAlloysItems.RAW_ZINC, UniformLootNumberProvider.create(1.0F, 2.0F)));
+
+    // Tin
+    biConsumer.accept(new Identifier(StalAlloys.MOD_ID, "blocks/tin_ore"), BlockLootTableGenerator.drops(StalAlloysBlocks.TIN_ORE, StalAlloysItems.RAW_TIN, UniformLootNumberProvider.create(1.0F, 3.0F)));
+    biConsumer.accept(new Identifier(StalAlloys.MOD_ID, "blocks/deepslate_tin_ore"), BlockLootTableGenerator.drops(StalAlloysBlocks.DEEPSLATE_TIN_ORE, StalAlloysItems.RAW_TIN, UniformLootNumberProvider.create(1.0F, 3.0F)));
+
+    // Carbon
+    biConsumer.accept(new Identifier(StalAlloys.MOD_ID, "blocks/carbon_ore"), BlockLootTableGenerator.drops(StalAlloysBlocks.CARBON_ORE, StalAlloysItems.RAW_CARBON, UniformLootNumberProvider.create(1.0F, 2.0F)));
+    biConsumer.accept(new Identifier(StalAlloys.MOD_ID, "blocks/deepslate_carbon_ore"), BlockLootTableGenerator.drops(StalAlloysBlocks.DEEPSLATE_CARBON_ORE, StalAlloysItems.RAW_CARBON, UniformLootNumberProvider.create(1.0F, 2.0F)));
   }
   
 }

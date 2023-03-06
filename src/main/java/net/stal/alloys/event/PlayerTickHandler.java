@@ -15,13 +15,13 @@ public class PlayerTickHandler implements ServerTickEvents.StartTick {
   @Override
   public void onStartTick(MinecraftServer server) {
     for (ServerPlayerEntity player : server.getPlayerManager().getPlayerList()) {
-      if (new Random().nextFloat() <= 0.005F) {
-        IEntityDataSaver dataPlayer = ((IEntityDataSaver) player);
+      // if (new Random().nextFloat() <= 0.005F) {
+      //   IEntityDataSaver dataPlayer = ((IEntityDataSaver) player);
 
-        ExamplePersistantData.removeData(dataPlayer, 1);
-        // player.sendMessage(Text.literal("Remove -> amount = 1").fillStyle(Style.EMPTY.withColor(Formatting.GRAY)));
-        player.sendMessage(Text.literal("Example Data: " + dataPlayer.getPersistantData().getInt(ExamplePersistantData.DATA_ID)).fillStyle(Style.EMPTY.withColor(Formatting.GOLD)), true);
-      }
+      //   ExamplePersistantData.removeData(dataPlayer, 1);
+      //   // player.sendMessage(Text.literal("Remove -> amount = 1").fillStyle(Style.EMPTY.withColor(Formatting.GRAY)));
+      //   player.sendMessage(Text.literal("Example Data: " + dataPlayer.getPersistantData().getInt(ExamplePersistantData.DATA_ID)).fillStyle(Style.EMPTY.withColor(Formatting.GOLD)), true);
+      // }
     }
   }
   

@@ -5,6 +5,18 @@
     "stal-alloys:steel_ore",
     "stal-alloys:deepslate_steel_ore",
     "stal-alloys:netherrack_steel_ore",
-    "stal-alloys:endstone_steel_ore"
+    "stal-alloys:endstone_steel_ore",
+    "stal-alloys:nickel_ore",
+    "stal-alloys:deepslate_nickel_ore",
+    "stal-alloys:netherrack_nickel_ore",
+    "stal-alloys:chromium_ore",
+    "stal-alloys:deepslate_chromium_ore",
+    "stal-alloys:netherrack_chromium_ore",
+    "stal-alloys:zinc_ore",
+    "stal-alloys:deepslate_zinc_ore",
+    "stal-alloys:tin_ore",
+    "stal-alloys:deepslate_tin_ore",
+    "stal-alloys:carbon_ore",
+    "stal-alloys:deepslate_carbon_ore"
   ]
 }

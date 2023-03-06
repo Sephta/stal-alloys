@@ -24,7 +24,7 @@
                   }
                 }
               ],
-              "name": "stal-alloys:endstone_steel_ore"
+              "name": "stal-alloys:deepslate_tin_ore"
             },
             {
               "type": "minecraft:item",
@@ -33,7 +33,7 @@
                   "add": false,
                   "count": {
                     "type": "minecraft:uniform",
-                    "max": 4.0,
+                    "max": 3.0,
                     "min": 1.0
                   },
                   "function": "minecraft:set_count"
@@ -42,7 +42,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "stal-alloys:raw_steel"
+              "name": "stal-alloys:raw_tin"
             }
           ]
         }

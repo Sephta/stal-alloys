@@ -12,6 +12,11 @@
   "item.stal-alloys.tin_ingot": "Tin Ingot",
   "item.stal-alloys.raw_tin": "Raw Tin",
 
+  "item.stal-alloys.steel_pickaxe": "Steel Pickaxe",
+  "item.stal-alloys.steel_axe": "Steel Axe",
+  "item.stal-alloys.steel_shovel": "Steel Shovel",
+  "item.stal-alloys.steel_hoe": "Steel Hoe",
+
   "block.stal-alloys.steel_ore": "Steel Ore",
   "block.stal-alloys.deepslate_steel_ore": "Deepslate Steel Ore",
   "block.stal-alloys.netherrack_steel_ore": "Netherrack Steel Ore",
