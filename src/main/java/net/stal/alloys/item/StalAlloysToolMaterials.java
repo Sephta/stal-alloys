@@ -1,12 +1,13 @@
 package net.stal.alloys.item;
 
 import java.util.function.Supplier;
+
+import net.fabricmc.yarn.constants.MiningLevels;
 import net.minecraft.item.*;
 import net.minecraft.recipe.Ingredient;
-import net.fabricmc.yarn.constants.MiningLevels;
 
 public enum StalAlloysToolMaterials implements ToolMaterial {
-  STEEL_ALLOY(5, 350, 6.0f, 2.0f, 14, () -> Ingredient.ofItems(StalAlloysItems.STEEL_INGOT));
+  STEEL_ALLOY(MiningLevels.IRON, 888, 6.0f, 2.0f, 14, () -> Ingredient.ofItems(StalAlloysItems.STEEL_INGOT));
 
   private final int mMiningLevel;
   private final int mItemDurability;
