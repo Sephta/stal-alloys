@@ -1,0 +1,16 @@
+{
+  "type": "stal-alloys:alloy_smelter",
+  "cookingtime": 200,
+  "experience": 1,
+  "ingredients": [
+    {
+      "item": "minecraft:copper_ingot"
+    },
+    {
+      "item": "stal-alloys:tin_ingot"
+    }
+  ],
+  "result": {
+    "item": "stal-alloys:steel_ingot"
+  }
+}
