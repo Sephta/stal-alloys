@@ -27,8 +27,8 @@ public class StalAlloysItems {
   public static final Item RAW_TIN = registerItem("raw_tin", new Item(new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
   public static final Item TIN_INGOT = registerItem("tin_ingot", new Item(new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
 
-  // TODO add Brass Ingot (update recipe)
-  // TODO add Bronze Ingot (update recipe)
+  public static final Item BRONZE_INGOT = registerItem("bronze_ingot", new Item(new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
+  public static final Item BRASS_INGOT = registerItem("brass_ingot", new Item(new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
 
   public static final Item STEEL_PICKAXE = registerItem("steel_pickaxe", new PickaxeItem(StalAlloysToolMaterials.STEEL_ALLOY, 1, -2.8F, new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
   public static final Item STEEL_AXE = registerItem("steel_axe", new AxeItem(StalAlloysToolMaterials.STEEL_ALLOY, 6, -3.1F, new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));

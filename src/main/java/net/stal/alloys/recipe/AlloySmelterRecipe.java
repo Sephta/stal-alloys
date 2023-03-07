@@ -48,8 +48,14 @@ public class AlloySmelterRecipe implements Recipe<SimpleInventory> {
   public boolean matches(SimpleInventory inventory, World world) {
     if (world.isClient()) return false;
 
-    return mRecipeItems.get(0).test(inventory.getStack(0 /* 0 is the first slot */)) && 
-           mRecipeItems.get(1).test(inventory.getStack(1 /* 1 is the second slot */));
+    boolean matchA = mRecipeItems.get(0).test(inventory.getStack(0 /* 0 is the first slot */)) && 
+                     mRecipeItems.get(1).test(inventory.getStack(1 /* 1 is the second slot */));
+
+    // This is here because the inputs are slot agnostic
+    boolean matchB = mRecipeItems.get(1).test(inventory.getStack(0 /* 0 is the first slot */)) && 
+                     mRecipeItems.get(0).test(inventory.getStack(1 /* 1 is the second slot */));
+
+    return matchA || matchB;
   }
 
   @Override
