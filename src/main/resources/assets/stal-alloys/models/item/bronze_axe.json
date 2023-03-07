@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "stal-alloys:item/steel_hoe"
+    "layer0": "stal-alloys:item/bronze_axe"
   }
 }

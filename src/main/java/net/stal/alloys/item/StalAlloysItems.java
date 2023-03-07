@@ -28,6 +28,10 @@ public class StalAlloysItems {
   public static final Item TIN_INGOT = registerItem("tin_ingot", new Item(new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
 
   public static final Item BRONZE_INGOT = registerItem("bronze_ingot", new Item(new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
+  public static final Item BRONZE_SWORD = registerItem("bronze_sword", new SwordItem(StalAlloysToolMaterials.BRONZE_ALLOY, 3, -2.0F, new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
+  public static final Item BRONZE_AXE = registerItem("bronze_axe", new AxeItem(StalAlloysToolMaterials.BRONZE_ALLOY, 6, -3.0F, new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
+  public static final Item BRONZE_DAGGER = registerItem("bronze_dagger", new SwordItem(StalAlloysToolMaterials.BRONZE_ALLOY, 2, -1.0F, new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
+  public static final Item BRONZE_DIRK = registerItem("bronze_dirk", new SwordItem(StalAlloysToolMaterials.BRONZE_ALLOY, 2, -1.8F, new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
   public static final Item BRASS_INGOT = registerItem("brass_ingot", new Item(new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
 
   public static final Item STEEL_PICKAXE = registerItem("steel_pickaxe", new PickaxeItem(StalAlloysToolMaterials.STEEL_ALLOY, 1, -2.8F, new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));

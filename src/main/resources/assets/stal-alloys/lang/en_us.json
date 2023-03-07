@@ -19,6 +19,11 @@
   "item.stal-alloys.steel_shovel": "Steel Shovel",
   "item.stal-alloys.steel_hoe": "Steel Hoe",
 
+  "item.stal-alloys.bronze_sword": "Bronze Sword",
+  "item.stal-alloys.bronze_axe": "Bronze Axe",
+  "item.stal-alloys.bronze_dagger": "Bronze Dagger",
+  "item.stal-alloys.bronze_dirk": "Bronze Dirk",
+
   "block.stal-alloys.steel_ore": "Steel Ore",
   "block.stal-alloys.deepslate_steel_ore": "Deepslate Steel Ore",
   "block.stal-alloys.netherrack_steel_ore": "Netherrack Steel Ore",
