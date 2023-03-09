@@ -1,6 +1,7 @@
 package net.stal.alloys.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -38,6 +39,11 @@ public class StalAlloysItems {
   public static final Item STEEL_AXE = registerItem("steel_axe", new AxeItem(StalAlloysToolMaterials.STEEL_ALLOY, 6, -3.1F, new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
   public static final Item STEEL_SHOVEL = registerItem("steel_shovel", new ShovelItem(StalAlloysToolMaterials.STEEL_ALLOY, 1.5F, -3.0F, new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
   public static final Item STEEL_HOE = registerItem("steel_hoe", new SteelHoeItem(StalAlloysToolMaterials.STEEL_ALLOY, 2, -1.0F, new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
+
+  public static final Item BRASS_HELMET = registerItem("brass_helmet", new ArmorItem(StalAlloysArmorMaterials.BRASS, EquipmentSlot.HEAD, new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
+  public static final Item BRASS_CHESTPLATE = registerItem("brass_chestplate", new ArmorItem(StalAlloysArmorMaterials.BRASS, EquipmentSlot.CHEST, new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
+  public static final Item BRASS_LEGGINGS = registerItem("brass_leggings", new ArmorItem(StalAlloysArmorMaterials.BRASS, EquipmentSlot.LEGS, new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
+  public static final Item BRASS_BOOTS = registerItem("brass_boots", new ArmorItem(StalAlloysArmorMaterials.BRASS, EquipmentSlot.FEET, new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
 
   private static Item registerItem(String name, Item item) {
     return Registry.register(Registry.ITEM, new Identifier(StalAlloys.MOD_ID, name), item);

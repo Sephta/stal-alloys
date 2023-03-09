@@ -24,6 +24,11 @@
   "item.stal-alloys.bronze_dagger": "Bronze Dagger",
   "item.stal-alloys.bronze_dirk": "Bronze Dirk",
 
+  "item.stal-alloys.brass_helmet": "Brass Helmet",
+  "item.stal-alloys.brass_chestplate": "Brass Chestplate",
+  "item.stal-alloys.brass_leggings": "Brass Leggings",
+  "item.stal-alloys.brass_boots": "Brass Boots",
+
   "block.stal-alloys.steel_ore": "Steel Ore",
   "block.stal-alloys.deepslate_steel_ore": "Deepslate Steel Ore",
   "block.stal-alloys.netherrack_steel_ore": "Netherrack Steel Ore",
