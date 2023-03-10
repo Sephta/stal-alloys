@@ -1,7 +1,7 @@
 {
   "parent": "block/orientable",
   "textures": {
-    "front": "stal-alloys:block/alloy_smelter_front",
+    "front": "stal-alloys:block/alloy_smelter_front_on",
     "side": "stal-alloys:block/alloy_smelter_side",
     "top": "stal-alloys:block/alloy_smelter_top"
   }

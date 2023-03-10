@@ -2,6 +2,7 @@ package net.stal.alloys.block.entity;
 
 import java.util.Optional;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -19,6 +20,7 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.stal.alloys.screen.AlloySmelterScreenHandler;
+import net.stal.alloys.block.AlloySmelterBlock;
 import net.stal.alloys.recipe.*;
 
 public class AlloySmelterEntity extends BlockEntity implements NamedScreenHandlerFactory, ImplementedInventory {
@@ -109,6 +111,9 @@ public class AlloySmelterEntity extends BlockEntity implements NamedScreenHandle
 
   public static <E extends BlockEntity> void tick(World world, BlockPos blockPos, BlockState blockState, AlloySmelterEntity entity) {
     if (world.isClient()) return;
+
+    blockState = blockState.with(AlloySmelterBlock.LIT, entity.mProgress > 0);
+    world.setBlockState(blockPos, blockState, Block.NOTIFY_ALL);
 
     if (hasRecipe(entity)) {
       entity.mProgress++;

@@ -250,6 +250,7 @@ public class StalAlloysBlocks {
         .sounds(BlockSoundGroup.DEEPSLATE)
         .strength(4.5F, 8.0F)
         .requiresTool()
+        .luminance((state) -> state.get(AlloySmelterBlock.LIT) ? 15 : 0)
     ),
     StalAlloysItemGroup.STAL_ALLOYS
   );
