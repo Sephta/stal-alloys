@@ -11,6 +11,7 @@ import net.minecraft.inventory.Inventories;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.PropertyDelegate;
@@ -20,26 +21,34 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.stal.alloys.screen.AlloySmelterScreenHandler;
+import net.stal.alloys.StalAlloys;
 import net.stal.alloys.block.AlloySmelterBlock;
 import net.stal.alloys.recipe.*;
 
 public class AlloySmelterEntity extends BlockEntity implements NamedScreenHandlerFactory, ImplementedInventory {
   public static final int mAlloySmelterProgressBarWidth = 44;
   public static final int mAlloySmelterProgressBarHeight = 17;
-  public static final int mAlloySmelterInventorySize = 3;
+  public static final int mAlloySmelterFuelGaugeWidth = 14;
+  public static final int mAlloySmelterFuelGaugeHeight = 25;
+  public static final int mAlloySmelterInventorySize = 4;
+  public static final int mAlloySmelterPropertyDelegateSize = 4;
 
   private final DefaultedList<ItemStack> mInventory = DefaultedList.ofSize(mAlloySmelterInventorySize, ItemStack.EMPTY);
 
   protected final PropertyDelegate mPropertyDelegate;
   private int mProgress = 0;
   private int mMaxProgress = 200; // Number of ticks it takes to smelt
-  // private int mFuelTime = 0;
-  // private int mMaxFuelTime = 0;
+  private int mFuel = 0;
+  private int mMaxFuel = 1000;
+
+  private static final String mProgressPropertyNBTKey = "alloy_smelter.progress";
+  private static final String mFuelPropertyNBTKey = "alloy_smelter.fuel";
 
   public static enum AlloySmelterInventorySlots {
     FIRST(0),
     SECOND(1),
-    THIRD(2);
+    THIRD(2),
+    FOURTH(3);
 
     private final int value;
     private AlloySmelterInventorySlots(int value) {
@@ -55,6 +64,8 @@ public class AlloySmelterEntity extends BlockEntity implements NamedScreenHandle
         switch (index) {
           case 0: return AlloySmelterEntity.this.mProgress;
           case 1: return AlloySmelterEntity.this.mMaxProgress;
+          case 2: return AlloySmelterEntity.this.mFuel;
+          case 3: return AlloySmelterEntity.this.mMaxFuel;
           default: return 0;
         }
       }
@@ -63,11 +74,13 @@ public class AlloySmelterEntity extends BlockEntity implements NamedScreenHandle
         switch (index) {
           case 0: AlloySmelterEntity.this.mProgress = value; break;
           case 1: AlloySmelterEntity.this.mMaxProgress = value; break;
+          case 2: AlloySmelterEntity.this.mFuel = value; break;
+          case 3: AlloySmelterEntity.this.mMaxFuel = value; break;
         }
       }
 
       public int size() {
-        return 2;
+        return mAlloySmelterPropertyDelegateSize;
       }
     };
   }
@@ -97,7 +110,8 @@ public class AlloySmelterEntity extends BlockEntity implements NamedScreenHandle
     
     Inventories.writeNbt(nbt, mInventory);
 
-    nbt.putInt("alloy_smelter.progress", mProgress);
+    nbt.putInt(mProgressPropertyNBTKey, mProgress);
+    nbt.putInt(mFuelPropertyNBTKey, mFuel);
   }
 
   @Override
@@ -106,16 +120,27 @@ public class AlloySmelterEntity extends BlockEntity implements NamedScreenHandle
 
     Inventories.readNbt(nbt, mInventory);
 
-    mProgress = nbt.getInt("alloy_smelter.progress");
+    mProgress = nbt.getInt(mProgressPropertyNBTKey);
+    mFuel = nbt.getInt(mFuelPropertyNBTKey);
   }
 
   public static <E extends BlockEntity> void tick(World world, BlockPos blockPos, BlockState blockState, AlloySmelterEntity entity) {
     if (world.isClient()) return;
 
-    blockState = blockState.with(AlloySmelterBlock.LIT, entity.mProgress > 0);
+    // If progress is ticking then the block is LIT
+    blockState = blockState.with(AlloySmelterBlock.LIT, entity.mFuel > 0 || entity.mProgress > 0);
     world.setBlockState(blockPos, blockState, Block.NOTIFY_ALL);
 
-    if (hasRecipe(entity)) {
+    checkBucketSlot(entity);
+
+    if (entity.mFuel > 0) {
+      // decrement fuel counter
+      entity.mFuel--;
+      // handle overflow
+      if (entity.mFuel < 0) entity.mFuel = 0;
+    }
+
+    if (hasRecipe(entity) && entity.mFuel > 0) {
       entity.mProgress++;
       markDirty(world, blockPos, blockState);
 
@@ -125,6 +150,23 @@ public class AlloySmelterEntity extends BlockEntity implements NamedScreenHandle
     } else {
       entity.resetProgress();
       markDirty(world, blockPos, blockState);
+    }
+  }
+
+  private static void checkBucketSlot(AlloySmelterEntity entity) {
+    ItemStack fuelStack = entity.mInventory.get(AlloySmelterInventorySlots.FOURTH.value);
+
+    if (!fuelStack.isEmpty()) {
+      if (fuelStack.isOf(Items.LAVA_BUCKET)) {
+        fuelStack.decrement(1);
+        entity.mInventory.set(AlloySmelterInventorySlots.FOURTH.value, new ItemStack(Items.BUCKET));
+
+        if (entity.mFuel + 200 > entity.mMaxFuel) {
+          entity.mFuel = entity.mMaxFuel;
+        } else {
+          entity.mFuel = entity.mFuel + 200;
+        }
+      }
     }
   }
 

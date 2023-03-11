@@ -36,7 +36,25 @@ public class AlloySmelterScreen extends HandledScreen<AlloySmelterScreenHandler>
     int y = (height - backgroundHeight) / 2;
 
     drawTexture(matrices, x, y, 0, 0, backgroundWidth, backgroundHeight);
+    renderFuelGauge(matrices, x, y);
     renderProgressionArrow(matrices, x, y);
+  }
+
+  private void renderFuelGauge(MatrixStack matrices, int x, int y) {
+    final int fuelGaugeXPos = 13;
+    final int fuelGaugeYPos = 18;
+
+    if (handler.hasFuel()) {
+      drawTexture(
+        matrices, 
+        x + fuelGaugeXPos, 
+        y + fuelGaugeYPos + 24 - handler.getScaledFuelGauge(), 
+        176, 
+        24 - handler.getScaledFuelGauge(), 
+        AlloySmelterEntity.mAlloySmelterFuelGaugeWidth,
+        handler.getScaledFuelGauge() + 1
+      );
+    }
   }
 
   private void renderProgressionArrow(MatrixStack matrices, int x, int y) {
@@ -49,8 +67,8 @@ public class AlloySmelterScreen extends HandledScreen<AlloySmelterScreenHandler>
         x + progressBarXPos, 
         y + progressBarYPos, 
         176, 
-        0, 
-        handler.getScaledProgress(), 
+        25, 
+        handler.getScaledProgressBar(), 
         AlloySmelterEntity.mAlloySmelterProgressBarHeight
       );
     }

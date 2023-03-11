@@ -8,6 +8,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.screen.ArrayPropertyDelegate;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
+import net.minecraft.screen.slot.FurnaceFuelSlot;
 import net.minecraft.screen.slot.Slot;
 import net.stal.alloys.block.entity.AlloySmelterEntity;
 
@@ -21,7 +22,7 @@ public class AlloySmelterScreenHandler extends ScreenHandler {
       syncId, 
       playerInventory, 
       new SimpleInventory(AlloySmelterEntity.mAlloySmelterInventorySize), 
-      new ArrayPropertyDelegate(2)
+      new ArrayPropertyDelegate(AlloySmelterEntity.mAlloySmelterPropertyDelegateSize)
     );
   }
 
@@ -34,9 +35,16 @@ public class AlloySmelterScreenHandler extends ScreenHandler {
     this.mPropertyDelegate = delegate;
 
     // Add Custom Alloy Smelter Slots
+
+    // Inputs
     addSlot(new Slot(inventory, 0, 39, 19));
     addSlot(new Slot(inventory, 1, 39, 48));
+
+    // Output
     addSlot(new Slot(inventory, 2, 121, 35));
+
+    // Lava Bucket Slot
+    addSlot(new Slot(inventory, 3, 12, 48));
 
     addPlayerInventory(playerInventory);
     addPlayerHotBar(playerInventory);
@@ -77,10 +85,18 @@ public class AlloySmelterScreenHandler extends ScreenHandler {
     return mPropertyDelegate.get(0) > 0;
   }
 
+  public boolean hasFuel() {
+    return mPropertyDelegate.get(2) > 0;
+  }
+
+  public int getFuel() {
+    return mPropertyDelegate.get(2);
+  }
+
   /**
    * @return the scaled width of the progress bar based on how much "progress" the alloy smelter has made thus far.
    */
-  public int getScaledProgress() {
+  public int getScaledProgressBar() {
     int result = 0;
     int currentProgress = mPropertyDelegate.get(0);
     int maxProgress = mPropertyDelegate.get(1);
@@ -89,6 +105,23 @@ public class AlloySmelterScreenHandler extends ScreenHandler {
     // progress bar texture according to how much progress was made
     if (maxProgress != 0 && currentProgress != 0) {
       result = currentProgress * AlloySmelterEntity.mAlloySmelterProgressBarWidth / maxProgress;
+    }
+
+    return  result;
+  }
+
+  /**
+   * @return the scaled length of the fuel progress bar based on how much fuel is remaining in the smelter.
+   */
+  public int getScaledFuelGauge() {
+    int result = 0;
+    int maxProgress = mPropertyDelegate.get(3);
+    int currentProgress = mPropertyDelegate.get(2);
+
+    // As long as the current and max progress are non-zero, scale the
+    // progress bar texture according to how much progress was made
+    if (maxProgress != 0 && currentProgress != 0) {
+      result = currentProgress * 25 / maxProgress;
     }
 
     return  result;
