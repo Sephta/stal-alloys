@@ -45,10 +45,10 @@ public class AlloySmelterEntity extends BlockEntity implements NamedScreenHandle
   private static final String mFuelPropertyNBTKey = "alloy_smelter.fuel";
 
   public static enum AlloySmelterInventorySlots {
-    FIRST(0),
-    SECOND(1),
-    THIRD(2),
-    FOURTH(3);
+    FIRST(0),  // Input slot A
+    SECOND(1), // Input slot B
+    THIRD(2),  // Output slot
+    FOURTH(3); // Fuel slot
 
     private final int value;
     private AlloySmelterInventorySlots(int value) {
