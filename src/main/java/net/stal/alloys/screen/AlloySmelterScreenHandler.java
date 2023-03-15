@@ -8,9 +8,9 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.screen.ArrayPropertyDelegate;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
-import net.minecraft.screen.slot.FurnaceFuelSlot;
 import net.minecraft.screen.slot.Slot;
 import net.stal.alloys.block.entity.AlloySmelterEntity;
+import net.stal.alloys.screen.slot.AlloySmelterOutputSlot;
 
 public class AlloySmelterScreenHandler extends ScreenHandler {
 
@@ -34,14 +34,12 @@ public class AlloySmelterScreenHandler extends ScreenHandler {
     inventory.onOpen(playerInventory.player);
     this.mPropertyDelegate = delegate;
 
-    // Add Custom Alloy Smelter Slots
-
     // Inputs
     addSlot(new Slot(inventory, 0, 39, 19));
     addSlot(new Slot(inventory, 1, 39, 48));
 
     // Output
-    addSlot(new Slot(inventory, 2, 121, 35));
+    addSlot(new AlloySmelterOutputSlot(playerInventory.player, inventory, 2, 121, 35));
 
     // Lava Bucket Slot
     addSlot(new Slot(inventory, 3, 12, 48));

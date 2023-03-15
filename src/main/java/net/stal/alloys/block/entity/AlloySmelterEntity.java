@@ -1,10 +1,19 @@
 package net.stal.alloys.block.entity;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
+import org.jetbrains.annotations.Nullable;
+
+import com.google.common.collect.Lists;
+
+import it.unimi.dsi.fastutil.objects.Object2IntMap;
+import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.entity.ExperienceOrbEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventories;
@@ -13,15 +22,20 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
+import net.minecraft.recipe.Recipe;
 import net.minecraft.screen.NamedScreenHandlerFactory;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
+import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.text.Text;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.MathHelper;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.stal.alloys.screen.AlloySmelterScreenHandler;
-import net.stal.alloys.StalAlloys;
 import net.stal.alloys.block.AlloySmelterBlock;
 import net.stal.alloys.recipe.*;
 
@@ -35,6 +49,8 @@ public class AlloySmelterEntity extends BlockEntity implements NamedScreenHandle
 
   private final DefaultedList<ItemStack> mInventory = DefaultedList.ofSize(mAlloySmelterInventorySize, ItemStack.EMPTY);
 
+  private final Object2IntOpenHashMap<Identifier> recipesUsed = new Object2IntOpenHashMap<Identifier>();
+
   protected final PropertyDelegate mPropertyDelegate;
   private int mProgress = 0;
   private int mMaxProgress = 200; // Number of ticks it takes to smelt
@@ -43,6 +59,7 @@ public class AlloySmelterEntity extends BlockEntity implements NamedScreenHandle
 
   private static final String mProgressPropertyNBTKey = "alloy_smelter.progress";
   private static final String mFuelPropertyNBTKey = "alloy_smelter.fuel";
+  private static final String mRecipesUsedNBTKey = "alloy_smelter.RecipesUsed";
 
   public static enum AlloySmelterInventorySlots {
     FIRST(0),  // Input slot A
@@ -107,11 +124,14 @@ public class AlloySmelterEntity extends BlockEntity implements NamedScreenHandle
   @Override
   protected void writeNbt(NbtCompound nbt) {
     super.writeNbt(nbt);
-    
-    Inventories.writeNbt(nbt, mInventory);
 
     nbt.putInt(mProgressPropertyNBTKey, mProgress);
     nbt.putInt(mFuelPropertyNBTKey, mFuel);
+    Inventories.writeNbt(nbt, mInventory);
+
+    NbtCompound nbtCompound = new NbtCompound();
+    this.recipesUsed.forEach((identifier, count) -> nbtCompound.putInt(identifier.toString(), (int)count));
+    nbt.put(mRecipesUsedNBTKey, nbtCompound);
   }
 
   @Override
@@ -122,7 +142,19 @@ public class AlloySmelterEntity extends BlockEntity implements NamedScreenHandle
 
     mProgress = nbt.getInt(mProgressPropertyNBTKey);
     mFuel = nbt.getInt(mFuelPropertyNBTKey);
+
+    NbtCompound nbtCompound = nbt.getCompound(mRecipesUsedNBTKey);
+    for (String string : nbtCompound.getKeys()) {
+      this.recipesUsed.put(new Identifier(string), nbtCompound.getInt(string));
+    }
   }
+
+  public void setLastRecipe(@Nullable Recipe<?> recipe) {
+    if (recipe != null) {
+        Identifier identifier = recipe.getId();
+        this.recipesUsed.addTo(identifier, 1);
+    }
+}
 
   public static <E extends BlockEntity> void tick(World world, BlockPos blockPos, BlockState blockState, AlloySmelterEntity entity) {
     if (world.isClient()) return;
@@ -213,6 +245,8 @@ public class AlloySmelterEntity extends BlockEntity implements NamedScreenHandle
         )
       );
 
+      entity.setLastRecipe(recipeFromInventory.get());
+
       entity.resetProgress();
     }
   }
@@ -226,5 +260,31 @@ public class AlloySmelterEntity extends BlockEntity implements NamedScreenHandle
     return inventory.getStack(AlloySmelterInventorySlots.THIRD.value).getMaxCount() > 
            (inventory.getStack(AlloySmelterInventorySlots.THIRD.value).getCount());
   }
+
+  public void dropExperienceForRecipesUsed(ServerPlayerEntity player) {
+    List<Recipe<?>> list = this.getRecipesUsedAndDropExperience(player.getWorld(), player.getPos());
+    player.unlockRecipes(list);
+    this.recipesUsed.clear();
+}
+
+public List<Recipe<?>> getRecipesUsedAndDropExperience(ServerWorld world, Vec3d pos) {
+    ArrayList<Recipe<?>> list = Lists.newArrayList();
+    for (Object2IntMap.Entry<Identifier> entry : this.recipesUsed.object2IntEntrySet()) {
+        world.getRecipeManager().get((Identifier)entry.getKey()).ifPresent(recipe -> {
+            list.add((Recipe<?>)recipe);
+            AlloySmelterEntity.dropExperience(world, pos, entry.getIntValue(), ((AlloySmelterRecipe)recipe).getExperience());
+        });
+    }
+    return list;
+}
+
+  private static void dropExperience(ServerWorld world, Vec3d pos, int multiplier, float experience) {
+    int amount = MathHelper.floor((float)multiplier * experience);
+    float f = MathHelper.fractionalPart((float)multiplier * experience);
+    if (f != 0.0f && Math.random() < (double)f) {
+        ++amount;
+    }
+    ExperienceOrbEntity.spawn(world, pos, amount);
+}
 
 }
