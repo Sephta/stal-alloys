@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#F#",
+        "CCC"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:deepslate_tiles"
+        },
+        "F": {
+            "item": "minecraft:furnace"
+        },
+        "C": {
+            "item": "minecraft:cobbled_deepslate"
+        }
+    },
+    "result": {
+        "item": "stal-alloys:alloy_smelter",
+        "count": 1
+    },
+    "group": "stal-alloys"
+}
