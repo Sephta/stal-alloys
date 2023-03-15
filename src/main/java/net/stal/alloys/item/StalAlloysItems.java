@@ -6,7 +6,7 @@ import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.stal.alloys.*;
-import net.stal.alloys.item.custom.SteelHoeItem;
+import net.stal.alloys.item.custom.StalAlloysHoeItem;
 
 public class StalAlloysItems {
 
@@ -28,6 +28,12 @@ public class StalAlloysItems {
   public static final Item RAW_TIN = registerItem("raw_tin", new Item(new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
   public static final Item TIN_INGOT = registerItem("tin_ingot", new Item(new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
 
+  public static final Item COPPER_SWORD = registerItem("copper_sword", new SwordItem(ToolMaterials.IRON, 3, -2.4F, new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
+  public static final Item COPPER_PICKAXE = registerItem("copper_pickaxe", new PickaxeItem(ToolMaterials.IRON, 1, -2.8F, new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
+  public static final Item COPPER_AXE = registerItem("copper_axe", new AxeItem(ToolMaterials.IRON, 6.0f, -3.1F, new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
+  public static final Item COPPER_SHOVEL = registerItem("copper_shovel", new ShovelItem(ToolMaterials.IRON, 1.5f, -3.0F, new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
+  public static final Item COPPER_HOE = registerItem("copper_hoe", new StalAlloysHoeItem(ToolMaterials.IRON, -2, -1.0F, new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
+
   public static final Item BRONZE_INGOT = registerItem("bronze_ingot", new Item(new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
   public static final Item BRONZE_SWORD = registerItem("bronze_sword", new SwordItem(StalAlloysToolMaterials.BRONZE_ALLOY, 3, -2.0F, new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
   public static final Item BRONZE_AXE = registerItem("bronze_axe", new AxeItem(StalAlloysToolMaterials.BRONZE_ALLOY, 6, -3.0F, new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
@@ -38,7 +44,7 @@ public class StalAlloysItems {
   public static final Item STEEL_PICKAXE = registerItem("steel_pickaxe", new PickaxeItem(StalAlloysToolMaterials.STEEL_ALLOY, 1, -2.8F, new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
   public static final Item STEEL_AXE = registerItem("steel_axe", new AxeItem(StalAlloysToolMaterials.STEEL_ALLOY, 6, -3.1F, new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
   public static final Item STEEL_SHOVEL = registerItem("steel_shovel", new ShovelItem(StalAlloysToolMaterials.STEEL_ALLOY, 1.5F, -3.0F, new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
-  public static final Item STEEL_HOE = registerItem("steel_hoe", new SteelHoeItem(StalAlloysToolMaterials.STEEL_ALLOY, 2, -1.0F, new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
+  public static final Item STEEL_HOE = registerItem("steel_hoe", new StalAlloysHoeItem(StalAlloysToolMaterials.STEEL_ALLOY, 2, -1.0F, new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
 
   public static final Item BRASS_HELMET = registerItem("brass_helmet", new ArmorItem(StalAlloysArmorMaterials.BRASS, EquipmentSlot.HEAD, new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
   public static final Item BRASS_CHESTPLATE = registerItem("brass_chestplate", new ArmorItem(StalAlloysArmorMaterials.BRASS, EquipmentSlot.CHEST, new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));

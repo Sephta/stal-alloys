@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "stal-alloys:item/copper_pickaxe"
+  }
+}
