@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "stal-alloys:block/cut_nickel",
+    "side": "stal-alloys:block/cut_nickel",
+    "top": "stal-alloys:block/cut_nickel"
+  }
+}

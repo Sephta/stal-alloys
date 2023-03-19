@@ -56,7 +56,8 @@ public class AlloySmelterEntity extends BlockEntity implements NamedScreenHandle
   private int mProgress = 0;
   private int mMaxProgress = 200; // Number of ticks it takes to smelt
   private int mFuel = 0;
-  private int mMaxFuel = 1000;
+  private int mMaxFuel = 100000;
+  private static int mAddFuelAmount = 20000;
 
   private static final String mProgressPropertyNBTKey = "alloy_smelter.progress";
   private static final String mFuelPropertyNBTKey = "alloy_smelter.fuel";
@@ -194,10 +195,10 @@ public class AlloySmelterEntity extends BlockEntity implements NamedScreenHandle
         fuelStack.decrement(1);
         entity.mInventory.set(AlloySmelterInventorySlots.FOURTH.value, new ItemStack(Items.BUCKET));
 
-        if (entity.mFuel + 200 > entity.mMaxFuel) {
+        if (entity.mFuel + mAddFuelAmount > entity.mMaxFuel) {
           entity.mFuel = entity.mMaxFuel;
         } else {
-          entity.mFuel = entity.mFuel + 200;
+          entity.mFuel = entity.mFuel + mAddFuelAmount;
         }
       }
     }

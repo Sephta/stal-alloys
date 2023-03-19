@@ -51,6 +51,8 @@ public class StalAlloysItems {
   public static final Item BRASS_LEGGINGS = registerItem("brass_leggings", new ArmorItem(StalAlloysArmorMaterials.BRASS, EquipmentSlot.LEGS, new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
   public static final Item BRASS_BOOTS = registerItem("brass_boots", new ArmorItem(StalAlloysArmorMaterials.BRASS, EquipmentSlot.FEET, new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
 
+  public static final Item STAINLESS_STEEL_INGOT = registerItem("stainless_steel_ingot", new Item(new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
+
   private static Item registerItem(String name, Item item) {
     return Registry.register(Registry.ITEM, new Identifier(StalAlloys.MOD_ID, name), item);
   }

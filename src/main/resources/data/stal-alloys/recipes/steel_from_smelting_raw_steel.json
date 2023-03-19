@@ -2,7 +2,7 @@
   "type": "minecraft:smelting",
   "cookingtime": 200,
   "experience": 1,
-  "group": "stal-alloys",
+  "group": "steel_ingot",
   "ingredient": {
     "item": "stal-alloys:raw_steel"
   },

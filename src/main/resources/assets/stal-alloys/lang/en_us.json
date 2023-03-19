@@ -13,6 +13,7 @@
   "item.stal-alloys.raw_tin": "Raw Tin",
   "item.stal-alloys.bronze_ingot": "Bronze Ingot",
   "item.stal-alloys.brass_ingot": "Brass Ingot",
+  "item.stal-alloys.stainless_steel_ingot": "Stainless Steel Ingot",
 
   "item.stal-alloys.steel_pickaxe": "Steel Pickaxe",
   "item.stal-alloys.steel_axe": "Steel Axe",
@@ -43,6 +44,10 @@
   "block.stal-alloys.nickel_ore": "Nickel Ore",
   "block.stal-alloys.deepslate_nickel_ore": "Deepslate Nickel Ore",
   "block.stal-alloys.netherrack_nickel_ore": "Netherrack Nickel Ore",
+  "block.stal-alloys.nickel_block": "Block of Nickel",
+  "block.stal-alloys.cut_nickel": "Cut Nickel",
+  "block.stal-alloys.cut_nickel_slab": "Cut Nickel Slab",
+  "block.stal-alloys.cut_nickel_stairs": "Cut Nickel Stairs",
   "block.stal-alloys.chromium_ore": "Chromium Ore",
   "block.stal-alloys.deepslate_chromium_ore": "Deepslate Chromium Ore",
   "block.stal-alloys.netherrack_chromium_ore": "Netherrack Chromium Ore",

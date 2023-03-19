@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "stal-alloys:block/cut_nickel_slab"
+    },
+    "type=double": {
+      "model": "stal-alloys:block/cut_nickel"
+    },
+    "type=top": {
+      "model": "stal-alloys:block/cut_nickel_slab_top"
+    }
+  }
+}

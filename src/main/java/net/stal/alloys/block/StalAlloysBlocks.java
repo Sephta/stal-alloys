@@ -120,6 +120,55 @@ public class StalAlloysBlocks {
     StalAlloysItemGroup.STAL_ALLOYS
   );
 
+  public static final Block NICKEL_BLOCK = registerBlock(
+    "nickel_block", 
+    new Block(
+      FabricBlockSettings
+        .of(Material.METAL)
+        .sounds(BlockSoundGroup.COPPER)
+        .strength(5.0F, 8.0F)
+        .requiresTool()
+    ),
+    StalAlloysItemGroup.STAL_ALLOYS
+  );
+
+  public static final Block CUT_NICKEL = registerBlock(
+    "cut_nickel", 
+    new Block(
+      FabricBlockSettings
+        .of(Material.METAL)
+        .sounds(BlockSoundGroup.COPPER)
+        .strength(5.0F, 8.0F)
+        .requiresTool()
+    ),
+    StalAlloysItemGroup.STAL_ALLOYS
+  );
+
+  public static final Block CUT_NICKEL_SLAB = registerBlock(
+    "cut_nickel_slab", 
+    new SlabBlock(
+      FabricBlockSettings
+        .of(Material.METAL)
+        .sounds(BlockSoundGroup.COPPER)
+        .strength(5.0F, 8.0F)
+        .requiresTool()
+    ),
+    StalAlloysItemGroup.STAL_ALLOYS
+  );
+
+  public static final Block CUT_NICKEL_STAIRS = registerBlock(
+    "cut_nickel_stairs",
+    new StairsBlock(
+      CUT_NICKEL.getDefaultState(), 
+      FabricBlockSettings
+        .of(Material.METAL)
+        .sounds(BlockSoundGroup.COPPER)
+        .strength(5.0F, 8.0F)
+        .requiresTool()
+    ),
+    StalAlloysItemGroup.STAL_ALLOYS
+  );
+
   // Block: Chromium
   public static final Block CHROMIUM_ORE = registerBlock(
     "chromium_ore", 
