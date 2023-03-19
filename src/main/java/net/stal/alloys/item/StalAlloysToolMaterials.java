@@ -7,9 +7,11 @@ import net.minecraft.item.*;
 import net.minecraft.recipe.Ingredient;
 
 public enum StalAlloysToolMaterials implements ToolMaterial {
-  STEEL_ALLOY(MiningLevels.IRON, 800, 7.0f, 3.0f, 10, () -> Ingredient.ofItems(StalAlloysItems.STEEL_INGOT)),
-  BRONZE_ALLOY(MiningLevels.IRON, 1200, 6.0f, 2.0f, 16, () -> Ingredient.ofItems(StalAlloysItems.STEEL_INGOT)),
-  BRASS_ALLOY(MiningLevels.DIAMOND, 1800, 12.0f, 3.0f, 22, () -> Ingredient.ofItems(StalAlloysItems.STEEL_INGOT));
+  STEEL_ALLOY(MiningLevels.DIAMOND, 1600, 9.0f, 3.0f, 12, () -> Ingredient.ofItems(StalAlloysItems.STEEL_INGOT)),
+  BRONZE_ALLOY(MiningLevels.IRON, 1024, 6.0f, 2.0f, 16, () -> Ingredient.ofItems(StalAlloysItems.BRONZE_INGOT)),
+  BRASS_ALLOY(MiningLevels.STONE, 768, 12.0f, 0.0f, 22, () -> Ingredient.ofItems(StalAlloysItems.BRASS_INGOT)),
+  FERROCHROME_ALLOY(MiningLevels.DIAMOND, 1600, 8.0f, 3.0f, 10, () -> Ingredient.ofItems(StalAlloysItems.CHROMIUM_INGOT)),
+  STAINLESS_STEEL_ALLOY(MiningLevels.NETHERITE, 2048, 9.0f, 4.0f, 15, () -> Ingredient.ofItems(StalAlloysItems.STEEL_INGOT));
 
   private final int mMiningLevel;
   private final int mItemDurability;

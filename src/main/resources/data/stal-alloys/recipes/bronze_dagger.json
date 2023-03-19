@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "stal-alloys",
+  "ingredients": [
+    {
+      "item": "minecraft:stick"
+    },
+    {
+      "item": "stal-alloys:bronze_ingot"
+    }
+  ],
+  "result": {
+    "item": "stal-alloys:bronze_dagger",
+    "count": 1
+  }
+}

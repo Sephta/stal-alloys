@@ -36,6 +36,7 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.stal.alloys.screen.AlloySmelterScreenHandler;
+import net.stal.alloys.StalAlloys;
 import net.stal.alloys.block.AlloySmelterBlock;
 import net.stal.alloys.recipe.*;
 
@@ -113,7 +114,7 @@ public class AlloySmelterEntity extends BlockEntity implements NamedScreenHandle
 
   @Override
   public Text getDisplayName() {
-    return Text.literal("Alloy Smelter");
+    return Text.translatable("container." + StalAlloys.MOD_ID + ".alloy_smelter");
   }
 
   @Override

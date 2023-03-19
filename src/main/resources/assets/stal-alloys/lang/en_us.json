@@ -19,6 +19,12 @@
   "item.stal-alloys.steel_shovel": "Steel Shovel",
   "item.stal-alloys.steel_hoe": "Steel Hoe",
 
+  "item.stal-alloys.copper_sword": "Copper Sword",
+  "item.stal-alloys.copper_pickaxe": "Copper Pickaxe",
+  "item.stal-alloys.copper_axe": "Copper Axe",
+  "item.stal-alloys.copper_shovel": "Copper Shovel",
+  "item.stal-alloys.copper_hoe": "Copper Hoe",
+
   "item.stal-alloys.bronze_sword": "Bronze Sword",
   "item.stal-alloys.bronze_axe": "Bronze Axe",
   "item.stal-alloys.bronze_dagger": "Bronze Dagger",
@@ -49,7 +55,6 @@
   "block.stal-alloys.alloy_smelter" : "Alloy Smelter",
 
   "container.stal-alloys.alloy_smelter" : "Alloy Smelter",
-
 
   "itemGroup.stal-alloys.stal_alloys": "STAL Alloys",
 
