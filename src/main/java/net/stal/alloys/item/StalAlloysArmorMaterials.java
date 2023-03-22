@@ -10,7 +10,8 @@ import net.stal.alloys.StalAlloys;
 
 public enum StalAlloysArmorMaterials implements ArmorMaterial {
 
-  BRASS("brass", 15, new int[]{2, 5, 6, 2}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0f, 0.0f, () -> Ingredient.ofItems(StalAlloysItems.BRASS_INGOT));
+  BRASS("brass", 12, new int[]{1, 4, 5, 2}, 18, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 0.0f, 0.1f, () -> Ingredient.ofItems(StalAlloysItems.BRASS_INGOT)),
+  STAINLESS_STEEL("stainless_steel", 48, new int[]{4, 7, 9, 4}, 25, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 5.0f, 0.2f, () -> Ingredient.ofItems(StalAlloysItems.STAINLESS_STEEL_INGOT));
 
   private static final int[] BASE_DURABILITY;
   private final String name;
