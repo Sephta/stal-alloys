@@ -10,17 +10,17 @@ import net.minecraft.world.gen.placementmodifier.*;
 
 public class StalAlloysPlacedFeatures {
   // Steel
-  public static final RegistryEntry<PlacedFeature> STEEL_ORE_PLACED = PlacedFeatures.register("steel_ore_placed",
-    StalAlloysConfiguredFeatures.STEEL_ORE, modifiersWithCount(9,
-      HeightRangePlacementModifier.trapezoid(YOffset.fixed(-80), YOffset.fixed(80))));
+  // public static final RegistryEntry<PlacedFeature> STEEL_ORE_PLACED = PlacedFeatures.register("steel_ore_placed",
+  //   StalAlloysConfiguredFeatures.STEEL_ORE, modifiersWithCount(9,
+  //     HeightRangePlacementModifier.trapezoid(YOffset.fixed(-80), YOffset.fixed(80))));
 
-    public static final RegistryEntry<PlacedFeature> NETHER_STEEL_ORE_PLACED = PlacedFeatures.register("netherrack_steel_ore_placed",
-      StalAlloysConfiguredFeatures.NETHER_STEEL_ORE, modifiersWithCount(10,
-        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+  //   public static final RegistryEntry<PlacedFeature> NETHER_STEEL_ORE_PLACED = PlacedFeatures.register("netherrack_steel_ore_placed",
+  //     StalAlloysConfiguredFeatures.NETHER_STEEL_ORE, modifiersWithCount(10,
+  //       HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
 
-    public static final RegistryEntry<PlacedFeature> END_STEEL_ORE_PLACED = PlacedFeatures.register("endstpne_steel_ore_placed",
-      StalAlloysConfiguredFeatures.END_STEEL_ORE, modifiersWithCount(10,
-        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+  //   public static final RegistryEntry<PlacedFeature> END_STEEL_ORE_PLACED = PlacedFeatures.register("endstpne_steel_ore_placed",
+  //     StalAlloysConfiguredFeatures.END_STEEL_ORE, modifiersWithCount(10,
+  //       HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
   
   // Nickel
   public static final RegistryEntry<PlacedFeature> NICKEL_ORE_PLACED = PlacedFeatures.register("nickel_ore_placed",
@@ -32,9 +32,9 @@ public class StalAlloysPlacedFeatures {
         HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
 
   // Chromium
-  public static final RegistryEntry<PlacedFeature> CHROMIUM_ORE_PLACED = PlacedFeatures.register("chromium_ore_placed",
-    StalAlloysConfiguredFeatures.CHROMIUM_ORE, modifiersWithCount(9,
-      HeightRangePlacementModifier.trapezoid(YOffset.fixed(-80), YOffset.fixed(80))));
+  // public static final RegistryEntry<PlacedFeature> CHROMIUM_ORE_PLACED = PlacedFeatures.register("chromium_ore_placed",
+  //   StalAlloysConfiguredFeatures.CHROMIUM_ORE, modifiersWithCount(9,
+  //     HeightRangePlacementModifier.trapezoid(YOffset.fixed(-80), YOffset.fixed(80))));
 
     public static final RegistryEntry<PlacedFeature> NETHER_CHROMIUM_ORE_PLACED = PlacedFeatures.register("netherrack_chromium_ore_placed",
       StalAlloysConfiguredFeatures.NETHER_CHROMIUM_ORE, modifiersWithCount(10,

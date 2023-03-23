@@ -16,57 +16,57 @@ import net.stal.alloys.item.StalAlloysItemGroup;
 public class StalAlloysBlocks {
 
   // Block: Steel
-  public static final Block STEEL_ORE = registerBlock(
-    "steel_ore", 
-    new OreBlock(
-      FabricBlockSettings
-        .of(Material.STONE)
-        .sounds(BlockSoundGroup.STONE)
-        .strength(3.0F, 8.0F)
-        .requiresTool(),
-      UniformIntProvider.create(3, 8)
-    ),
-    StalAlloysItemGroup.STAL_ALLOYS
-  );
+  // public static final Block STEEL_ORE = registerBlock(
+  //   "steel_ore", 
+  //   new OreBlock(
+  //     FabricBlockSettings
+  //       .of(Material.STONE)
+  //       .sounds(BlockSoundGroup.STONE)
+  //       .strength(3.0F, 8.0F)
+  //       .requiresTool(),
+  //     UniformIntProvider.create(3, 8)
+  //   ),
+  //   StalAlloysItemGroup.STAL_ALLOYS
+  // );
 
-  public static final Block DEEPSLATE_STEEL_ORE = registerBlock(
-    "deepslate_steel_ore", 
-    new OreBlock(
-      FabricBlockSettings
-        .of(Material.STONE)
-        .sounds(BlockSoundGroup.DEEPSLATE)
-        .strength(4.5F, 8.0F)
-        .requiresTool(),
-      UniformIntProvider.create(4, 9)
-    ),
-    StalAlloysItemGroup.STAL_ALLOYS
-  );
+  // public static final Block DEEPSLATE_STEEL_ORE = registerBlock(
+  //   "deepslate_steel_ore", 
+  //   new OreBlock(
+  //     FabricBlockSettings
+  //       .of(Material.STONE)
+  //       .sounds(BlockSoundGroup.DEEPSLATE)
+  //       .strength(4.5F, 8.0F)
+  //       .requiresTool(),
+  //     UniformIntProvider.create(4, 9)
+  //   ),
+  //   StalAlloysItemGroup.STAL_ALLOYS
+  // );
 
-  public static final Block NETHERRACK_STEEL_ORE = registerBlock(
-    "netherrack_steel_ore", 
-    new OreBlock(
-      FabricBlockSettings
-        .of(Material.STONE)
-        .sounds(BlockSoundGroup.NETHERRACK)
-        .strength(0.4F)
-        .requiresTool(),
-      UniformIntProvider.create(4, 9)
-    ),
-    StalAlloysItemGroup.STAL_ALLOYS
-  );
+  // public static final Block NETHERRACK_STEEL_ORE = registerBlock(
+  //   "netherrack_steel_ore", 
+  //   new OreBlock(
+  //     FabricBlockSettings
+  //       .of(Material.STONE)
+  //       .sounds(BlockSoundGroup.NETHERRACK)
+  //       .strength(0.4F)
+  //       .requiresTool(),
+  //     UniformIntProvider.create(4, 9)
+  //   ),
+  //   StalAlloysItemGroup.STAL_ALLOYS
+  // );
 
-  public static final Block ENDSTONE_STEEL_ORE = registerBlock(
-    "endstone_steel_ore", 
-    new OreBlock(
-      FabricBlockSettings
-        .of(Material.STONE)
-        .sounds(BlockSoundGroup.STONE)
-        .strength(3.0F, 9.0F)
-        .requiresTool(),
-      UniformIntProvider.create(4, 9)
-    ),
-    StalAlloysItemGroup.STAL_ALLOYS
-  );
+  // public static final Block ENDSTONE_STEEL_ORE = registerBlock(
+  //   "endstone_steel_ore", 
+  //   new OreBlock(
+  //     FabricBlockSettings
+  //       .of(Material.STONE)
+  //       .sounds(BlockSoundGroup.STONE)
+  //       .strength(3.0F, 9.0F)
+  //       .requiresTool(),
+  //     UniformIntProvider.create(4, 9)
+  //   ),
+  //   StalAlloysItemGroup.STAL_ALLOYS
+  // );
 
   public static final Block STEEL_BLOCK = registerBlock(
     "steel_block", 
@@ -209,6 +209,18 @@ public class StalAlloysBlocks {
     StalAlloysItemGroup.STAL_ALLOYS
   );
 
+  public static final Block CHROMIUM_BLOCK = registerBlock(
+    "chromium_block", 
+    new Block(
+      FabricBlockSettings
+        .of(Material.METAL)
+        .sounds(BlockSoundGroup.METAL)
+        .strength(5.0F, 8.0F)
+        .requiresTool()
+    ),
+    StalAlloysItemGroup.STAL_ALLOYS
+  );
+
   // Block: Carbon
   public static final Block CARBON_ORE = registerBlock(
     "carbon_ore", 
@@ -259,6 +271,18 @@ public class StalAlloysBlocks {
         .strength(4.5F, 8.0F)
         .requiresTool(),
       UniformIntProvider.create(4, 9)
+    ),
+    StalAlloysItemGroup.STAL_ALLOYS
+  );
+
+  public static final Block ZINC_BLOCK = registerBlock(
+    "zinc_block", 
+    new Block(
+      FabricBlockSettings
+        .of(Material.METAL)
+        .sounds(BlockSoundGroup.METAL)
+        .strength(5.0F, 8.0F)
+        .requiresTool()
     ),
     StalAlloysItemGroup.STAL_ALLOYS
   );

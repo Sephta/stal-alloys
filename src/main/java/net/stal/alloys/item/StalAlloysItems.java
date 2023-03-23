@@ -10,7 +10,7 @@ import net.stal.alloys.item.custom.StalAlloysHoeItem;
 
 public class StalAlloysItems {
 
-  public static final Item RAW_STEEL = registerItem("raw_steel", new Item(new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
+  // public static final Item RAW_STEEL = registerItem("raw_steel", new Item(new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
   public static final Item STEEL_INGOT = registerItem("steel_ingot", new Item(new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));
 
   public static final Item RAW_NICKEL = registerItem("raw_nickel", new Item(new FabricItemSettings().group(StalAlloysItemGroup.STAL_ALLOYS)));

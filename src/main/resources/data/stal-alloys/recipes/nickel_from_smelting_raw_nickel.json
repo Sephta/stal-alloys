@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 1,
+  "group": "nickel_ingot",
+  "ingredient": {
+    "item": "stal-alloys:raw_nickel"
+  },
+  "result": "stal-alloys:nickel_ingot"
+}

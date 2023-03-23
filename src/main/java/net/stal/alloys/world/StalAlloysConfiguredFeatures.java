@@ -16,18 +16,18 @@ import java.util.List;
 public class StalAlloysConfiguredFeatures {
 
   // Steel
-  public static final List<OreFeatureConfig.Target> OVERWORLD_STEEL_ORES = List.of(
-    OreFeatureConfig.createTarget(OreConfiguredFeatures.STONE_ORE_REPLACEABLES, StalAlloysBlocks.STEEL_ORE.getDefaultState()),
-    OreFeatureConfig.createTarget(OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES, StalAlloysBlocks.DEEPSLATE_STEEL_ORE.getDefaultState())
-  );
+  // public static final List<OreFeatureConfig.Target> OVERWORLD_STEEL_ORES = List.of(
+  //   OreFeatureConfig.createTarget(OreConfiguredFeatures.STONE_ORE_REPLACEABLES, StalAlloysBlocks.STEEL_ORE.getDefaultState()),
+  //   OreFeatureConfig.createTarget(OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES, StalAlloysBlocks.DEEPSLATE_STEEL_ORE.getDefaultState())
+  // );
 
-  public static final List<OreFeatureConfig.Target> NETHER_STEEL_ORES = List.of(
-    OreFeatureConfig.createTarget(OreConfiguredFeatures.BASE_STONE_NETHER, StalAlloysBlocks.NETHERRACK_STEEL_ORE.getDefaultState())
-  );
+  // public static final List<OreFeatureConfig.Target> NETHER_STEEL_ORES = List.of(
+  //   OreFeatureConfig.createTarget(OreConfiguredFeatures.BASE_STONE_NETHER, StalAlloysBlocks.NETHERRACK_STEEL_ORE.getDefaultState())
+  // );
 
-  public static final List<OreFeatureConfig.Target> END_STEEL_ORES = List.of(
-    OreFeatureConfig.createTarget(new BlockMatchRuleTest(Blocks.END_STONE), StalAlloysBlocks.ENDSTONE_STEEL_ORE.getDefaultState())
-  );
+  // public static final List<OreFeatureConfig.Target> END_STEEL_ORES = List.of(
+  //   OreFeatureConfig.createTarget(new BlockMatchRuleTest(Blocks.END_STONE), StalAlloysBlocks.ENDSTONE_STEEL_ORE.getDefaultState())
+  // );
 
   // Nickel
   public static final List<OreFeatureConfig.Target> OVERWORLD_NICKEL_ORES = List.of(
@@ -40,10 +40,10 @@ public class StalAlloysConfiguredFeatures {
   );
 
   // Chromium
-  public static final List<OreFeatureConfig.Target> OVERWORLD_CHROMIUM_ORES = List.of(
-    OreFeatureConfig.createTarget(OreConfiguredFeatures.STONE_ORE_REPLACEABLES, StalAlloysBlocks.CHROMIUM_ORE.getDefaultState()),
-    OreFeatureConfig.createTarget(OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES, StalAlloysBlocks.DEEPSLATE_CHROMIUM_ORE.getDefaultState())
-  );
+  // public static final List<OreFeatureConfig.Target> OVERWORLD_CHROMIUM_ORES = List.of(
+  //   OreFeatureConfig.createTarget(OreConfiguredFeatures.STONE_ORE_REPLACEABLES, StalAlloysBlocks.CHROMIUM_ORE.getDefaultState()),
+  //   OreFeatureConfig.createTarget(OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES, StalAlloysBlocks.DEEPSLATE_CHROMIUM_ORE.getDefaultState())
+  // );
 
   public static final List<OreFeatureConfig.Target> NETHER_CHROMIUM_ORES = List.of(
     OreFeatureConfig.createTarget(OreConfiguredFeatures.BASE_STONE_NETHER, StalAlloysBlocks.NETHERRACK_CHROMIUM_ORE.getDefaultState())
@@ -68,14 +68,14 @@ public class StalAlloysConfiguredFeatures {
   );
 
   // Steel Registry
-  public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> STEEL_ORE = 
-    ConfiguredFeatures.register("steel_ore", Feature.ORE, new OreFeatureConfig(OVERWORLD_STEEL_ORES, 9));
+  // public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> STEEL_ORE = 
+  //   ConfiguredFeatures.register("steel_ore", Feature.ORE, new OreFeatureConfig(OVERWORLD_STEEL_ORES, 9));
 
-  public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> NETHER_STEEL_ORE = 
-    ConfiguredFeatures.register("netherrack_steel_ore", Feature.ORE, new OreFeatureConfig(NETHER_STEEL_ORES, 12));
+  // public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> NETHER_STEEL_ORE = 
+  //   ConfiguredFeatures.register("netherrack_steel_ore", Feature.ORE, new OreFeatureConfig(NETHER_STEEL_ORES, 12));
 
-  public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> END_STEEL_ORE = 
-    ConfiguredFeatures.register("endstone_steel_ore", Feature.ORE, new OreFeatureConfig(END_STEEL_ORES, 12));
+  // public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> END_STEEL_ORE = 
+  //   ConfiguredFeatures.register("endstone_steel_ore", Feature.ORE, new OreFeatureConfig(END_STEEL_ORES, 12));
 
   // Nickel Registry
   public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> NICKEL_ORE = 
@@ -85,8 +85,8 @@ public class StalAlloysConfiguredFeatures {
     ConfiguredFeatures.register("netherrack_nickel_ore", Feature.ORE, new OreFeatureConfig(NETHER_NICKEL_ORES, 12));
 
   // Chromium Registry
-  public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> CHROMIUM_ORE = 
-    ConfiguredFeatures.register("chromium_ore", Feature.ORE, new OreFeatureConfig(OVERWORLD_CHROMIUM_ORES, 9));
+  // public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> CHROMIUM_ORE = 
+  //   ConfiguredFeatures.register("chromium_ore", Feature.ORE, new OreFeatureConfig(OVERWORLD_CHROMIUM_ORES, 9));
 
   public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> NETHER_CHROMIUM_ORE = 
     ConfiguredFeatures.register("netherrack_chromium_ore", Feature.ORE, new OreFeatureConfig(NETHER_CHROMIUM_ORES, 12));

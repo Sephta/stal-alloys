@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 120,
+  "experience": 1,
+  "group": "zinc_ingot",
+  "ingredient": {
+    "item": "stal-alloys:raw_zinc"
+  },
+  "result": "stal-alloys:zinc_ingot"
+}

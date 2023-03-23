@@ -20,13 +20,6 @@ public class StalAlloysLootTableGenerator extends SimpleFabricLootTableProvider 
 
   @Override
   public void accept(BiConsumer<Identifier, Builder> biConsumer) {
-    // Steel
-    // biConsumer.accept(new Identifier(StalAlloys.MOD_ID, "blocks/steel_block"), BlockLootTableGenerator.drops(StalAlloysBlocks.STEEL_BLOCK, ConstantLootNumberProvider.create(1.0F)));
-    // biConsumer.accept(new Identifier(StalAlloys.MOD_ID, "blocks/steel_ore"), BlockLootTableGenerator.drops(StalAlloysBlocks.STEEL_ORE, StalAlloysItems.RAW_STEEL, UniformLootNumberProvider.create(1.0F, 4.0F)));
-    // biConsumer.accept(new Identifier(StalAlloys.MOD_ID, "blocks/deepslate_steel_ore"), BlockLootTableGenerator.drops(StalAlloysBlocks.DEEPSLATE_STEEL_ORE, StalAlloysItems.RAW_STEEL, UniformLootNumberProvider.create(1.0F, 4.0F)));
-    // biConsumer.accept(new Identifier(StalAlloys.MOD_ID, "blocks/netherrack_steel_ore"), BlockLootTableGenerator.drops(StalAlloysBlocks.NETHERRACK_STEEL_ORE, StalAlloysItems.RAW_STEEL, UniformLootNumberProvider.create(1.0F, 4.0F)));
-    // biConsumer.accept(new Identifier(StalAlloys.MOD_ID, "blocks/endstone_steel_ore"), BlockLootTableGenerator.drops(StalAlloysBlocks.ENDSTONE_STEEL_ORE, StalAlloysItems.RAW_STEEL, UniformLootNumberProvider.create(1.0F, 4.0F)));
-
     // Nickel
     biConsumer.accept(new Identifier(StalAlloys.MOD_ID, "blocks/nickel_ore"), BlockLootTableGenerator.drops(StalAlloysBlocks.NICKEL_ORE, StalAlloysItems.RAW_NICKEL, ConstantLootNumberProvider.create(1.0F)));
     biConsumer.accept(new Identifier(StalAlloys.MOD_ID, "blocks/deepslate_nickel_ore"), BlockLootTableGenerator.drops(StalAlloysBlocks.DEEPSLATE_NICKEL_ORE, StalAlloysItems.RAW_NICKEL, ConstantLootNumberProvider.create(1.0F)));
