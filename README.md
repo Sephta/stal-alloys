@@ -29,6 +29,13 @@ This mod adds new metals and metal alloys into Minecraft that add more variety t
 ![Bronze Dirk](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/bronze_dirk.png "Bronze Dirk")
 ![Bronze Dagger](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/bronze_dagger.png "Bronze Dagger")
 
+### Steel Tools
+
+![Steel Pickaxe](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/steel_pickaxe.png "Steel Pickaxe")
+![Steel Axe](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/steel_axe.png "Steel Axe")
+![Steel Shovel](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/steel_shovel.png "Steel Shovel")
+![Steel Hoe](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/steel_hoe.png "Steel Hoe")
+
 ### Brass Armor
 
 ![Brass Helmet](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/brass_helmet.png "Brass Helmet")
