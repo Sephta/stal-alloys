@@ -6,16 +6,21 @@ This mod adds new metals and metal alloys into Minecraft that add more variety t
 
 ### The Alloy Smelter
 
-<img src="https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/alloy_smelter_block.png" width="75%">
+The alloy smelter is a new block entity used to smelt together a combination of two metals to produce a metal alloy. See the [Crafting Recipes](#crafting-recipes) listed bellow.
 
-The alloy smelter is a new block entity 
+<details>
+<summary>Click to View</summary>
+
+<img src="https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/alloy_smelter_block.png">
+
+</details>
 
 ### New Ores (and corresponding materials)
 
 <details>
 <summary>Click to View</summary>
 
-<img src="https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/ores_01.png" width="75%">
+<img src="https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/ores_01.png">
 
 </details>
 
@@ -24,7 +29,7 @@ The alloy smelter is a new block entity
 <details>
 <summary>Click to View</summary>
 
-<img src="https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/cosmetic_blocks.png" width="75%">
+<img src="https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/cosmetic_blocks.png">
 
 </details>
 
@@ -33,7 +38,7 @@ The alloy smelter is a new block entity
 <details>
 <summary>Click to View</summary>
 
-<img src="https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/tools.png" width="75%">
+<img src="https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/tools.png">
 
 </details>
 
@@ -42,7 +47,7 @@ The alloy smelter is a new block entity
 <details>
 <summary>Click to View</summary>
 
-<img src="https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/armors_01.png" width="75%">
+<img src="https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/armors_01.png">
 
 </details>
 
