@@ -1,7 +1,7 @@
 {
   "type": "stal-alloys:alloy_smelter",
-  "cookingtime": 200,
-  "experience": 1,
+  "cookingtime": 400,
+  "experience": 10,
   "ingredients": [
     {
       "item": "minecraft:iron_ingot"

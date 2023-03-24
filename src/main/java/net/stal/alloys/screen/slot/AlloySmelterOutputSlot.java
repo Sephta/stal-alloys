@@ -52,5 +52,14 @@ public class AlloySmelterOutputSlot extends Slot {
     }
     super.onCrafted(stack, amount);
   }
+
+  // @Override
+  // public void onQuickTransfer(ItemStack newItem, ItemStack original) {
+  //   stack.onCraft(this.player.world, this.player, this.amount);
+  //   if (this.player instanceof ServerPlayerEntity && this.inventory instanceof AlloySmelterEntity) {
+  //     ((AlloySmelterEntity)this.inventory).dropExperienceForRecipesUsed((ServerPlayerEntity)this.player);
+  //   }
+  //   super.onQuickTransfer(newItem, original);
+  // }
   
 }

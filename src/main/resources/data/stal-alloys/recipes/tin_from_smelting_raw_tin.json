@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smelting",
-  "cookingtime": 80,
+  "cookingtime": 140,
   "experience": 1,
   "group": "tin_ingot",
   "ingredient": {

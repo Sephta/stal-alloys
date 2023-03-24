@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:netherite_leggings"
+  },
+  "addition": {
+    "item": "stal-alloys:stainless_steel_ingot"
+  },
+  "result": {
+    "item": "stal-alloys:stainless_steel_leggings"
+  }
+}

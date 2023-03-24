@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smelting",
-  "cookingtime": 120,
+  "cookingtime": 180,
   "experience": 1,
   "group": "zinc_ingot",
   "ingredient": {
