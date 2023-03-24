@@ -6,19 +6,40 @@ This mod adds new metals and metal alloys into Minecraft that add more variety t
 
 ### New Ores (and corresponding materials)
 
-![New Ores](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/ores_01.png "New Ores")
+
+<details>
+<summary>Click to View</summary>
+
+<img src="https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/ores_01.png" width="75%">
+
+</details>
 
 ### New Decorative Blocks
 
-![Cosmetic Blocks](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/cosmetic_blocks.png "Cosmetic Blocks")
+<details>
+<summary>Click to View</summary>
+
+<img src="https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/cosmetic_blocks.png" width="75%">
+
+</details>
 
 ### New Tools and Weapons
 
-![Tools](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/tools.png "Tools")
+<details>
+<summary>Click to View</summary>
+
+<img src="https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/tools.png" width="75%">
+
+</details>
 
 ### New Armors
 
-![Armors](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/armors_01.png "Armors")
+<details>
+<summary>Click to View</summary>
+
+<img src="https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/armors_01.png" width="75%">
+
+</details>
 
 ## Crafting Recipes
 
