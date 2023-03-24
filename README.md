@@ -16,7 +16,7 @@ This mod adds new metals and metal alloys into Minecraft that add more variety t
 
 ### Alloy Smelter
 
-![Alloy Smelter Recipe](/imgs/alloy_smelter.png "Alloy Smelter Recipe")
+![Alloy Smelter Recipe](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/alloy_smelter.png "Alloy Smelter Recipe")
 
 #### Copper and Zinc produce Brass
 
