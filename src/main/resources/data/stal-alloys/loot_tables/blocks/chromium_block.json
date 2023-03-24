@@ -24,7 +24,7 @@
                   }
                 }
               ],
-              "name": "stal-alloys:zinc_ore"
+              "name": "stal-alloys:chromium_block"
             },
             {
               "type": "minecraft:item",
@@ -38,7 +38,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "stal-alloys:raw_zinc"
+              "name": "stal-alloys:chromium_block"
             }
           ]
         }

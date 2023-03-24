@@ -37,12 +37,12 @@ public class StalAlloysPlacedFeatures {
   //     HeightRangePlacementModifier.trapezoid(YOffset.fixed(-80), YOffset.fixed(80))));
 
     public static final RegistryEntry<PlacedFeature> NETHER_CHROMIUM_ORE_PLACED = PlacedFeatures.register("netherrack_chromium_ore_placed",
-      StalAlloysConfiguredFeatures.NETHER_CHROMIUM_ORE, modifiersWithCount(10,
-        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+      StalAlloysConfiguredFeatures.NETHER_CHROMIUM_ORE, modifiersWithCount(3,
+        HeightRangePlacementModifier.uniform(YOffset.fixed(-15), YOffset.fixed(22))));
 
   // Carbon
   public static final RegistryEntry<PlacedFeature> CARBON_ORE_PLACED = PlacedFeatures.register("carbon_ore_placed",
-    StalAlloysConfiguredFeatures.CARBON_ORE, modifiersWithCount(9,
+    StalAlloysConfiguredFeatures.CARBON_ORE, modifiersWithCount(4,
       HeightRangePlacementModifier.trapezoid(YOffset.fixed(-80), YOffset.fixed(80))));
 
   // Zinc

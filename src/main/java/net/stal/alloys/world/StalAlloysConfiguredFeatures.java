@@ -51,7 +51,7 @@ public class StalAlloysConfiguredFeatures {
 
   // Carbon
   public static final List<OreFeatureConfig.Target> OVERWORLD_CARBON_ORES = List.of(
-    OreFeatureConfig.createTarget(OreConfiguredFeatures.STONE_ORE_REPLACEABLES, StalAlloysBlocks.CARBON_ORE.getDefaultState()),
+    // OreFeatureConfig.createTarget(OreConfiguredFeatures.STONE_ORE_REPLACEABLES, StalAlloysBlocks.CARBON_ORE.getDefaultState()),
     OreFeatureConfig.createTarget(OreConfiguredFeatures.DEEPSLATE_ORE_REPLACEABLES, StalAlloysBlocks.DEEPSLATE_CARBON_ORE.getDefaultState())
   );
 
@@ -79,7 +79,7 @@ public class StalAlloysConfiguredFeatures {
 
   // Nickel Registry
   public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> NICKEL_ORE = 
-    ConfiguredFeatures.register("nickel_ore", Feature.ORE, new OreFeatureConfig(OVERWORLD_NICKEL_ORES, 9));
+    ConfiguredFeatures.register("nickel_ore", Feature.ORE, new OreFeatureConfig(OVERWORLD_NICKEL_ORES, 12));
 
   public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> NETHER_NICKEL_ORE = 
     ConfiguredFeatures.register("netherrack_nickel_ore", Feature.ORE, new OreFeatureConfig(NETHER_NICKEL_ORES, 12));
@@ -89,11 +89,11 @@ public class StalAlloysConfiguredFeatures {
   //   ConfiguredFeatures.register("chromium_ore", Feature.ORE, new OreFeatureConfig(OVERWORLD_CHROMIUM_ORES, 9));
 
   public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> NETHER_CHROMIUM_ORE = 
-    ConfiguredFeatures.register("netherrack_chromium_ore", Feature.ORE, new OreFeatureConfig(NETHER_CHROMIUM_ORES, 12));
+    ConfiguredFeatures.register("netherrack_chromium_ore", Feature.ORE, new OreFeatureConfig(NETHER_CHROMIUM_ORES, 4));
 
   // Carbon Registry
   public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> CARBON_ORE = 
-    ConfiguredFeatures.register("carbon_ore", Feature.ORE, new OreFeatureConfig(OVERWORLD_CARBON_ORES, 9));
+    ConfiguredFeatures.register("carbon_ore", Feature.ORE, new OreFeatureConfig(OVERWORLD_CARBON_ORES, 4));
 
   // Zinc Registry
   public static final RegistryEntry<ConfiguredFeature<OreFeatureConfig, ?>> ZINC_ORE = 
