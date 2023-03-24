@@ -64,7 +64,7 @@ This mod adds new metals and metal alloys into Minecraft that add more variety t
 ![Brass Leggings](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/brass_leggings.png "Brass Leggings")
 ![Brass Boots](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/brass_boots.png "Brass Boots")
 
-### Stainless Steel Armor
+### Stainless Steel Armor (must use Smithing Table)
 
 ![Stainless Steel Helmet](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/stainless_steel_helmet.png "Stainless Steel Helmet")
 ![Stainless Steel Chestplate](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/stainless_steel_chestplate.png "Stainless Steel Chestplate")
@@ -72,3 +72,7 @@ This mod adds new metals and metal alloys into Minecraft that add more variety t
 ![Stainless Steel Boots](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/stainless_steel_boots.png "Stainless Steel Boots")
 
 ## Links
+
+* My GitHub: [@Sephta](https://github.com/Sephta "User Sephta's GitHub Profile")
+* [Modrinth Page](https://modrinth.com/mod/stal-alloys "STAL Alloys Modrinth Page")
+* [Curseforge Page](https://www.curseforge.com/minecraft/mc-mods/stal-alloys "STAL Alloys Curseforge Page")
