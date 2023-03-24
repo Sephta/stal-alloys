@@ -14,6 +14,25 @@ This mod adds new metals and metal alloys into Minecraft that add more variety t
 
 ## Crafting Recipes
 
+### Alloy Smelter
+
+#### Copper and Zinc produce Brass
+
+![Brass](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/brass_alloy_smelter.png "Brass")
+
+#### Copper and Tin produce Bronze
+
+![Bronze](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/bronze_alloy_smelter.png "Bronze")
+
+#### Iron and Carbon Plates produce Steel
+
+![Steel](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/steel_alloy_smelter.png "Steel")
+
+### Chromium and Steel produce Stainless Steel
+
+![Stainless Steel](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/stainless_steel_alloy_smelter.png "Stainless Steel")
+
+
 ### Copper Tools
 
 ![Copper Sword](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/copper_sword.png "Copper Sword")
