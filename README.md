@@ -58,7 +58,12 @@ Each new metal has a distinct purpose. Some produce tools, others weapons and/or
 
 ### Alloy Smelter
 
+
+
 ![Alloy Smelter Recipe](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/alloy_smelter.png "Alloy Smelter Recipe")
+
+<details>
+<summary>View Smelter Recipes</summary>
 
 #### Copper and Zinc produce Brass
 
@@ -76,8 +81,12 @@ Each new metal has a distinct purpose. Some produce tools, others weapons and/or
 
 ![Stainless Steel Recipe](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/stainless_steel_alloy_smelter.png "Stainless Steel Recipe")
 
+</details>
 
 ### Copper Tools
+
+<details>
+<summary>Click to View</summary>
 
 ![Copper Sword](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/copper_sword.png "Copper Sword")
 ![Copper Pickaxe](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/copper_pickaxe.png "Copper Pickaxe")
@@ -85,33 +94,55 @@ Each new metal has a distinct purpose. Some produce tools, others weapons and/or
 ![Copper Shovel](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/copper_shovel.png "Copper Shovel")
 ![Copper Hoe](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/copper_hoe.png "Copper Hoe")
 
+</details>
+
 ### Bronze Weapons
+
+<details>
+<summary>Click to View</summary>
 
 ![Bronze Sword](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/bronze_sword.png "Bronze Sword")
 ![Bronze Axe](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/bronze_axe.png "Bronze Axe")
 ![Bronze Dirk](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/bronze_dirk.png "Bronze Dirk")
 ![Bronze Dagger](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/bronze_dagger.png "Bronze Dagger")
 
+</details>
+
 ### Steel Tools
+
+<details>
+<summary>Click to View</summary>
 
 ![Steel Pickaxe](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/steel_pickaxe.png "Steel Pickaxe")
 ![Steel Axe](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/steel_axe.png "Steel Axe")
 ![Steel Shovel](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/steel_shovel.png "Steel Shovel")
 ![Steel Hoe](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/steel_hoe.png "Steel Hoe")
 
+</details>
+
 ### Brass Armor
+
+<details>
+<summary>Click to View</summary>
 
 ![Brass Helmet](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/brass_helmet.png "Brass Helmet")
 ![Brass Chestplate](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/brass_chestplate.png "Brass Chestplate")
 ![Brass Leggings](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/brass_leggings.png "Brass Leggings")
 ![Brass Boots](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/brass_boots.png "Brass Boots")
 
+</details>
+
 ### Stainless Steel Armor (must use Smithing Table)
+
+<details>
+<summary>Click to View</summary>
 
 ![Stainless Steel Helmet](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/stainless_steel_helmet.png "Stainless Steel Helmet")
 ![Stainless Steel Chestplate](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/stainless_steel_chestplate.png "Stainless Steel Chestplate")
 ![Stainless Steel Leggings](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/stainless_steel_leggings.png "Stainless Steel Leggings")
 ![Stainless Steel Boots](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/stainless_steel_boots.png "Stainless Steel Boots")
+
+</details>
 
 ## Links
 
