@@ -17,8 +17,16 @@ The alloy smelter is a new block entity used to smelt together a combination of 
 
 ### New Ores (and corresponding materials)
 
+There are 5 new ores added to the game that each serve a unique purpose. Most ores have varients in different layers of the overworld or nether.
+
 <details>
 <summary>Click to View</summary>
+
+|                 | Chromium | Nickel | Carbon | Zinc | Tin |
+|-----------------|:--------:|:------:|:------:|:----:|:---:|
+| **Stone Layer**     |    NO    |   YES  |   NO   |  YES | YES |
+| **Deepslate Layer** |    NO    |   YES  |   YES  |  YES | YES |
+| **The Nether**      |    YES   |   YES  |   NO   |  NO  |  NO |
 
 <img src="https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/ores_01.png">
 
@@ -33,21 +41,16 @@ The alloy smelter is a new block entity used to smelt together a combination of 
 
 </details>
 
-### New Tools and Weapons
+### New Tools | Weapons | Armor
 
-<details>
-<summary>Click to View</summary>
-
-<img src="https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/tools.png">
-
-</details>
-
-### New Armors
+Each new metal has a distinct purpose. Some produce tools, others weapons and/or armor.
 
 <details>
 <summary>Click to View</summary>
 
 <img src="https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/armors_01.png">
+
+<img src="https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/tools.png">
 
 </details>
 
