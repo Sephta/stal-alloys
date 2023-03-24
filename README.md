@@ -4,8 +4,13 @@ This mod adds new metals and metal alloys into Minecraft that add more variety t
 
 ## Features
 
-### New Ores (and corresponding materials)
+### The Alloy Smelter
 
+<img src="https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/alloy_smelter_block.png" width="75%">
+
+The alloy smelter is a new block entity 
+
+### New Ores (and corresponding materials)
 
 <details>
 <summary>Click to View</summary>
