@@ -69,6 +69,8 @@ public class AlloySmelterScreenHandler extends ScreenHandler {
             } else {
                 slot.markDirty();
             }
+
+            slot.onTakeItem(player, originalStack);
         }
 
         return newStack;
