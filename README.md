@@ -73,6 +73,7 @@ This mod adds new metals and metal alloys into Minecraft that add more variety t
 
 ## Links
 
-* My GitHub: [@Sephta](https://github.com/Sephta "User Sephta's GitHub Profile")
+* [GitHub @Sephta](https://github.com/Sephta "User Sephta's GitHub Profile")
+* [Source Code](https://github.com/Sephta/stal-alloys "STAL Alloys Source Code Repository")
 * [Modrinth Page](https://modrinth.com/mod/stal-alloys "STAL Alloys Modrinth Page")
 * [Curseforge Page](https://www.curseforge.com/minecraft/mc-mods/stal-alloys "STAL Alloys Curseforge Page")
