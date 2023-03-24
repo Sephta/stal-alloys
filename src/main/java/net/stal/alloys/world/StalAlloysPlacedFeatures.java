@@ -42,8 +42,8 @@ public class StalAlloysPlacedFeatures {
 
   // Carbon
   public static final RegistryEntry<PlacedFeature> CARBON_ORE_PLACED = PlacedFeatures.register("carbon_ore_placed",
-    StalAlloysConfiguredFeatures.CARBON_ORE, modifiersWithCount(4,
-      HeightRangePlacementModifier.trapezoid(YOffset.fixed(-80), YOffset.fixed(80))));
+    StalAlloysConfiguredFeatures.CARBON_ORE, modifiersWithCount(6,
+      HeightRangePlacementModifier.trapezoid(YOffset.fixed(-80), YOffset.fixed(0))));
 
   // Zinc
   public static final RegistryEntry<PlacedFeature> ZINC_ORE_PLACED = PlacedFeatures.register("zinc_ore_placed",
