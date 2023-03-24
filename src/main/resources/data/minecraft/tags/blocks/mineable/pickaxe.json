@@ -19,6 +19,7 @@
     "stal-alloys:cut_nickel_slab",
     "stal-alloys:cut_nickel_stairs",
     "stal-alloys:zinc_block",
-    "stal-alloys:chromium_block"
+    "stal-alloys:chromium_block",
+    "stal-alloys:alloy_smelter"
   ]
 }

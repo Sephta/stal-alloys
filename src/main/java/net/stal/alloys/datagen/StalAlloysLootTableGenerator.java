@@ -20,6 +20,9 @@ public class StalAlloysLootTableGenerator extends SimpleFabricLootTableProvider 
 
   @Override
   public void accept(BiConsumer<Identifier, Builder> biConsumer) {
+    // Alloy Smelter
+    biConsumer.accept(new Identifier(StalAlloys.MOD_ID, "blocks/alloy_smelter"), BlockLootTableGenerator.drops(StalAlloysBlocks.ALLOY_SMELTER, StalAlloysBlocks.ALLOY_SMELTER, ConstantLootNumberProvider.create(1.0F)));
+
     // Nickel
     biConsumer.accept(new Identifier(StalAlloys.MOD_ID, "blocks/nickel_block"), BlockLootTableGenerator.drops(StalAlloysBlocks.NICKEL_BLOCK, StalAlloysBlocks.NICKEL_BLOCK, ConstantLootNumberProvider.create(1.0F)));
     biConsumer.accept(new Identifier(StalAlloys.MOD_ID, "blocks/cut_nickel"), BlockLootTableGenerator.drops(StalAlloysBlocks.CUT_NICKEL, StalAlloysBlocks.CUT_NICKEL, ConstantLootNumberProvider.create(1.0F)));
