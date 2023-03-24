@@ -2,13 +2,13 @@
 
 This mod adds new metals and metal alloys into Minecraft that add more variety to tools, armors, decorative blocks, and resources when mining.
 
-# Features
+## Features
 
-## New Ores (and corresponding materials)
+### New Ores (and corresponding materials)
 
-## New Decorative Blocks
+### New Decorative Blocks
 
-## New Tools and Weapons
+### New Tools and Weapons
 
 ### New Armors
 
