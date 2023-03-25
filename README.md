@@ -58,8 +58,6 @@ Each new metal has a distinct purpose. Some produce tools, others weapons and/or
 
 ### Alloy Smelter
 
-
-
 ![Alloy Smelter Recipe](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/alloy_smelter.png "Alloy Smelter Recipe")
 
 <details>
@@ -72,6 +70,10 @@ Each new metal has a distinct purpose. Some produce tools, others weapons and/or
 #### Copper and Tin produce Bronze
 
 ![Bronze Recipe](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/bronze_alloy_smelter.png "Bronze Recipe")
+
+#### Carbon Dust will make Carbon Plates
+
+![Carbon Plate](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/carbon_plate.png "Carbon Plate")
 
 #### Iron and Carbon Plates produce Steel
 
