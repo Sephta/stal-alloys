@@ -3,15 +3,15 @@
 	"id": "stal-alloys",
 	"version": "${version}",
 	"name": "STAL Alloys",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "This mod adds new metals and metal alloys into Minecraft that add more variety to tools, armors, decorative blocks, and resources when mining.",
 	"authors": [
 		"Sephta"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
+		"homepage": "https://github.com/Sephta/stal-alloys",
 		"sources": "https://github.com/Sephta/stal-alloys"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/stal-alloys/icon.png",
 	"environment": "*",
 	"entrypoints": {
