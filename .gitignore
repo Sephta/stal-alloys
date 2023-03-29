@@ -29,7 +29,7 @@ bin/
 *.DS_Store
 
 # fabric
-
+generated
 run/
 
 # java
