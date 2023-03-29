@@ -68,7 +68,7 @@
 
   "container.stal-alloys.alloy_smelter" : "Alloy Smelter",
 
-  "itemGroup.stal-alloys.stal_alloys": "STAL Alloys",
+  "itemGroup.stal-alloys": "STAL Alloys",
 
   "key.category.stal-alloys.example": "Example Key Category",
   "key.stal-alloys.example": "Example Key Binding"

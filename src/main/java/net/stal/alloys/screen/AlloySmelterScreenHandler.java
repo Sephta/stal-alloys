@@ -50,7 +50,7 @@ public class AlloySmelterScreenHandler extends ScreenHandler {
   }
 
   @Override
-  public ItemStack transferSlot(PlayerEntity player, int inventorySlot) {
+  public ItemStack quickMove(PlayerEntity player, int inventorySlot) {
     ItemStack newStack = ItemStack.EMPTY;
         Slot slot = this.slots.get(inventorySlot);
         if (slot != null && slot.hasStack()) {

@@ -1,6 +1,7 @@
 package net.stal.alloys;
 
 import net.fabricmc.api.ModInitializer;
+import net.stal.alloys.item.StalAlloysItemGroup;
 // import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.stal.alloys.item.StalAlloysItems;
 import net.stal.alloys.networking.StalAlloysMessages;
@@ -27,6 +28,8 @@ public class StalAlloys implements ModInitializer {
 		
 		// Configured Features Must be called first
 		StalAlloysConfiguredFeatures.registerConfiguredFeatures();
+
+		StalAlloysItemGroup.registerItemGroup();
 
 		StalAlloysItems.registerModItems();
 

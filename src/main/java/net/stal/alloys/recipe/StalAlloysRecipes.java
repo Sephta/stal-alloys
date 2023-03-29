@@ -1,7 +1,8 @@
 package net.stal.alloys.recipe;
 
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 import net.stal.alloys.StalAlloys;
 
 public class StalAlloysRecipes {
@@ -10,14 +11,14 @@ public class StalAlloysRecipes {
 
     // Alloy Smelter Serializer
     Registry.register(
-      Registry.RECIPE_SERIALIZER, 
+      Registries.RECIPE_SERIALIZER, 
       new Identifier(StalAlloys.MOD_ID, AlloySmelterRecipe.Serializer.ID), 
       AlloySmelterRecipe.Serializer.INSTANCE
     );
 
     // Alloy Smelter Type
     Registry.register(
-      Registry.RECIPE_TYPE, 
+      Registries.RECIPE_TYPE, 
       new Identifier(StalAlloys.MOD_ID, AlloySmelterRecipe.Type.ID), 
       AlloySmelterRecipe.Type.INSTANCE
     );
