@@ -1,16 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "# #",
-    "# #",
-    "   "
-  ],
+  "category": "equipment",
   "key": {
     "#": {
       "item": "stal-alloys:brass_ingot"
     }
   },
+  "pattern": [
+    "# #",
+    "# #",
+    "   "
+  ],
   "result": {
     "item": "stal-alloys:brass_boots"
-  }
+  },
+  "show_notification": true
 }

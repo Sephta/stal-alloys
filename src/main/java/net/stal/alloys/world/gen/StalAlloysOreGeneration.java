@@ -8,10 +8,12 @@ import net.stal.alloys.world.StalAlloysPlacedFeatures;
 public class StalAlloysOreGeneration {
   public static void generateOres() {
     // Nickel
-    BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, StalAlloysPlacedFeatures.NICKEL_ORE_PLACED_KEY); 
+    BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, StalAlloysPlacedFeatures.NICKEL_ORE_SMALL_PLACED_KEY); 
+    BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, StalAlloysPlacedFeatures.NICKEL_ORE_LARGE_PLACED_KEY);
     BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(), GenerationStep.Feature.UNDERGROUND_ORES, StalAlloysPlacedFeatures.NETHERRACK_NICKEL_ORE_PLACED_KEY); 
 
     // Chromium
+    BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, StalAlloysPlacedFeatures.CHROMIUM_ORE_PLACED_KEY); 
     BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(), GenerationStep.Feature.UNDERGROUND_ORES, StalAlloysPlacedFeatures.NETHERRACK_CHROMIUM_ORE_PLACED_KEY); 
 
     // Carbon

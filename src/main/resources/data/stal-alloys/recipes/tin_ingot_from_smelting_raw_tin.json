@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 140,
+  "experience": 1.0,
+  "group": "tin_ingot",
+  "ingredient": {
+    "item": "stal-alloys:raw_tin"
+  },
+  "result": "stal-alloys:tin_ingot"
+}

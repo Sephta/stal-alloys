@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "stal-alloys:nickel_block"
-  },
-  "result": "stal-alloys:cut_nickel",
-  "count": 1
-}

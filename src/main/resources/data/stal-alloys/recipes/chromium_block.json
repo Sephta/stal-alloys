@@ -1,17 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "###",
-    "###",
-    "###"
-  ],
+  "category": "misc",
   "key": {
     "#": {
       "item": "stal-alloys:chromium_ingot"
     }
   },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
   "result": {
-    "item": "stal-alloys:chromium_block",
-    "count": 1
-  }
+    "item": "stal-alloys:chromium_block"
+  },
+  "show_notification": true
 }

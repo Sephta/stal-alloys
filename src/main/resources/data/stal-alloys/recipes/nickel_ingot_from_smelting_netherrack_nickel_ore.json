@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "group": "nickel_ingot",
+  "ingredient": {
+    "item": "stal-alloys:netherrack_nickel_ore"
+  },
+  "result": "stal-alloys:nickel_ingot"
+}

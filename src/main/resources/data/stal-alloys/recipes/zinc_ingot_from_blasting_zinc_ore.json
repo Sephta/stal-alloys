@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 1.0,
+  "group": "zinc_ingot",
+  "ingredient": {
+    "item": "stal-alloys:zinc_ore"
+  },
+  "result": "stal-alloys:zinc_ingot"
+}

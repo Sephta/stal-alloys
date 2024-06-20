@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_netherrack_chromium_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "stal-alloys:netherrack_chromium_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:chromium_ingot_from_smelting_netherrack_chromium_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_netherrack_chromium_ore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:chromium_ingot_from_smelting_netherrack_chromium_ore"
+    ]
+  }
+}

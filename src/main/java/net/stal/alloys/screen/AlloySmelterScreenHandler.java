@@ -5,6 +5,7 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.screen.ArrayPropertyDelegate;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
@@ -50,30 +51,38 @@ public class AlloySmelterScreenHandler extends ScreenHandler {
   }
 
   @Override
-  public ItemStack quickMove(PlayerEntity player, int inventorySlot) {
+  public ItemStack quickMove(PlayerEntity player, int inventorySlotIndex) {
     ItemStack newStack = ItemStack.EMPTY;
-        Slot slot = this.slots.get(inventorySlot);
-        if (slot != null && slot.hasStack()) {
-            ItemStack originalStack = slot.getStack();
-            newStack = originalStack.copy();
-            if (inventorySlot < this.mInventory.size()) {
-                if (!this.insertItem(originalStack, this.mInventory.size(), this.slots.size(), true)) {
-                    return ItemStack.EMPTY;
-                }
-            } else if (!this.insertItem(originalStack, 0, this.mInventory.size(), false)) {
-                return ItemStack.EMPTY;
-            }
+    Slot slot = this.slots.get(inventorySlotIndex);
+    if (slot != null && slot.hasStack()) {
+        ItemStack originalStack = slot.getStack();
+        newStack = originalStack.copy();
 
-            if (originalStack.isEmpty()) {
-                slot.setStack(ItemStack.EMPTY);
-            } else {
-                slot.markDirty();
-            }
-
-            slot.onTakeItem(player, originalStack);
+        // Attempt to move Lava Bucket to Fuel Slot
+        if (slot.getStack().getItem() == Items.LAVA_BUCKET) {
+          if (!this.insertItem(originalStack, 3, this.slots.size(), false)) {
+            return ItemStack.EMPTY;
+          }
         }
 
-        return newStack;
+        if (inventorySlotIndex < this.mInventory.size()) {
+            if (!this.insertItem(originalStack, this.mInventory.size(), this.slots.size(), true)) {
+                return ItemStack.EMPTY;
+            }
+        } else if (!this.insertItem(originalStack, 0, this.mInventory.size(), false)) {
+            return ItemStack.EMPTY;
+        }
+
+        if (originalStack.isEmpty()) {
+            slot.setStack(ItemStack.EMPTY);
+        } else {
+            slot.markDirty();
+        }
+
+        slot.onTakeItem(player, originalStack);
+    }
+
+    return newStack;
   }
 
   @Override

@@ -1,11 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "stal-alloys",
-  "pattern": [
-    "## ",
-    "#S ",
-    " S "
-  ],
+  "category": "equipment",
   "key": {
     "#": {
       "item": "stal-alloys:steel_ingot"
@@ -14,8 +9,13 @@
       "item": "minecraft:stick"
     }
   },
+  "pattern": [
+    "## ",
+    "#S ",
+    " S "
+  ],
   "result": {
-    "item": "stal-alloys:steel_axe",
-    "count": 1
-  }
+    "item": "stal-alloys:steel_axe"
+  },
+  "show_notification": true
 }

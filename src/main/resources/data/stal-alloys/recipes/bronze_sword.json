@@ -1,11 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "stal-alloys",
-  "pattern": [
-    " # ",
-    " # ",
-    " S "
-  ],
+  "category": "equipment",
   "key": {
     "#": {
       "item": "stal-alloys:bronze_ingot"
@@ -14,8 +9,13 @@
       "item": "minecraft:stick"
     }
   },
+  "pattern": [
+    " # ",
+    " # ",
+    " S "
+  ],
   "result": {
-    "item": "stal-alloys:bronze_sword",
-    "count": 1
-  }
+    "item": "stal-alloys:bronze_sword"
+  },
+  "show_notification": true
 }

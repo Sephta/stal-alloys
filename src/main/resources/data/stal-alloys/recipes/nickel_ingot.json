@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "stal-alloys:nickel_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "stal-alloys:nickel_ingot"
+  }
+}

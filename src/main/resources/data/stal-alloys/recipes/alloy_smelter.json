@@ -1,24 +1,24 @@
 {
-    "type": "minecraft:crafting_shaped",
-    "pattern": [
-        "###",
-        "#F#",
-        "CCC"
-    ],
-    "key": {
-        "#": {
-            "item": "minecraft:deepslate_tiles"
-        },
-        "F": {
-            "item": "minecraft:furnace"
-        },
-        "C": {
-            "item": "minecraft:cobbled_deepslate"
-        }
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:deepslate_tiles"
     },
-    "result": {
-        "item": "stal-alloys:alloy_smelter",
-        "count": 1
+    "C": {
+      "item": "minecraft:cobbled_deepslate"
     },
-    "group": "alloy_smelter"
+    "F": {
+      "item": "minecraft:furnace"
+    }
+  },
+  "pattern": [
+    "###",
+    "#F#",
+    "CCC"
+  ],
+  "result": {
+    "item": "stal-alloys:alloy_smelter"
+  },
+  "show_notification": true
 }

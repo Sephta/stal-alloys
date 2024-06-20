@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 360,
+  "experience": 1.0,
+  "group": "chromium_ingot",
+  "ingredient": {
+    "item": "stal-alloys:netherrack_chromium_ore"
+  },
+  "result": "stal-alloys:chromium_ingot"
+}

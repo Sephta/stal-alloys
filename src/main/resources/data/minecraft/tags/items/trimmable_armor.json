@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "stal-alloys:stainless_steel_helmet",
+    "stal-alloys:stainless_steel_chestplate",
+    "stal-alloys:stainless_steel_leggings",
+    "stal-alloys:stainless_steel_boots",
+    "stal-alloys:brass_helmet",
+    "stal-alloys:brass_chestplate",
+    "stal-alloys:brass_leggings",
+    "stal-alloys:brass_boots"
+  ]
+}

@@ -1,17 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "###",
-    "###",
-    "###"
-  ],
+  "category": "misc",
   "key": {
     "#": {
       "item": "stal-alloys:zinc_ingot"
     }
   },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
   "result": {
-    "item": "stal-alloys:zinc_block",
-    "count": 1
-  }
+    "item": "stal-alloys:zinc_block"
+  },
+  "show_notification": true
 }

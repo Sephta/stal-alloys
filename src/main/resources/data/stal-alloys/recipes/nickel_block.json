@@ -1,17 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "###",
-    "###",
-    "###"
-  ],
+  "category": "misc",
   "key": {
     "#": {
       "item": "stal-alloys:nickel_ingot"
     }
   },
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
   "result": {
-    "item": "stal-alloys:nickel_block",
-    "count": 1
-  }
+    "item": "stal-alloys:nickel_block"
+  },
+  "show_notification": true
 }

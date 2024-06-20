@@ -1,21 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "stal-alloys",
-  "pattern": [
-    " C ",
-    " S ",
-    " S "
-  ],
+  "category": "equipment",
   "key": {
-    "C": {
+    "#": {
       "item": "minecraft:copper_ingot"
     },
     "S": {
       "item": "minecraft:stick"
     }
   },
+  "pattern": [
+    " # ",
+    " S ",
+    " S "
+  ],
   "result": {
-    "item": "stal-alloys:copper_shovel",
-    "count": 1
-  }
+    "item": "stal-alloys:copper_shovel"
+  },
+  "show_notification": true
 }
