@@ -102,7 +102,7 @@ public class AlloySmelterRecipe implements Recipe<SimpleInventory> {
     public static final String ID = "alloy_smelter"; // name given in the json file
 
     public static final Codec<AlloySmelterRecipe> CODEC = RecordCodecBuilder.create(in -> in.group(
-      ItemStack.INGREDIENT_ENTRY_CODEC.fieldOf(AlloySmelterRecipeAttributes.RESULT.value).forGetter(r -> r.mOutput),
+      ItemStack.RECIPE_RESULT_CODEC.fieldOf(AlloySmelterRecipeAttributes.RESULT.value).forGetter(r -> r.mOutput),
       validateAmount(Ingredient.DISALLOW_EMPTY_CODEC, mNumberOfInputs).fieldOf(AlloySmelterRecipeAttributes.INGREDIENTS.value).forGetter(AlloySmelterRecipe::getIngredients),
       Codecs.NONNEGATIVE_INT.fieldOf(AlloySmelterRecipeAttributes.COOKINGTIME.value).forGetter(AlloySmelterRecipe::getCookingTime),
       Codecs.NONNEGATIVE_INT.fieldOf(AlloySmelterRecipeAttributes.EXPERIENCE.value).forGetter(AlloySmelterRecipe::getExperience)
