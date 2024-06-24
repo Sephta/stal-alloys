@@ -1,0 +1,63 @@
+{
+  "parent": "minecraft:stal-alloys/alloys-nickel",
+  "criteria": {
+    "cut_nickel_crafted": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stal-alloys:cut_nickel"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "cut_nickel_slab_crafted": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stal-alloys:cut_nickel_slab"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "cut_nickel_stairs_crafted": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stal-alloys:cut_nickel_stairs"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "stal-alloys:advancement_nickel_decor_description_text"
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "stal-alloys:cut_nickel"
+    },
+    "title": {
+      "translate": "stal-alloys:advancement_nickel_decor_title_text"
+    }
+  },
+  "requirements": [
+    [
+      "cut_nickel_crafted"
+    ],
+    [
+      "cut_nickel_slab_crafted"
+    ],
+    [
+      "cut_nickel_stairs_crafted"
+    ]
+  ],
+  "rewards": {
+    "experience": 20
+  },
+  "sends_telemetry_event": true
+}

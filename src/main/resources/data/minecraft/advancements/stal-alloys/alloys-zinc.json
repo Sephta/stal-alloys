@@ -1,0 +1,36 @@
+{
+  "parent": "minecraft:stal-alloys/alloy-smelter-root",
+  "criteria": {
+    "raw_zinc_acquired": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stal-alloys:raw_zinc"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "stal-alloys:advancement_alloys_zinc_description_text"
+    },
+    "icon": {
+      "count": 1,
+      "id": "stal-alloys:raw_zinc"
+    },
+    "title": {
+      "translate": "stal-alloys:advancement_alloys_zinc_title_text"
+    }
+  },
+  "requirements": [
+    [
+      "raw_zinc_acquired"
+    ]
+  ],
+  "rewards": {
+    "experience": 10
+  },
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,76 @@
+{
+  "parent": "minecraft:stal-alloys/alloys-bronze",
+  "criteria": {
+    "bronze_axe_crafted": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stal-alloys:bronze_axe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "bronze_dagger_crafted": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stal-alloys:bronze_dagger"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "bronze_dirk_crafted": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stal-alloys:bronze_dirk"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "bronze_sword_crafted": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stal-alloys:bronze_sword"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "stal-alloys:advancement_bronze_weapons_description_text"
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "stal-alloys:bronze_sword"
+    },
+    "title": {
+      "translate": "stal-alloys:advancement_bronze_weapons_title_text"
+    }
+  },
+  "requirements": [
+    [
+      "bronze_axe_crafted"
+    ],
+    [
+      "bronze_dagger_crafted"
+    ],
+    [
+      "bronze_dirk_crafted"
+    ],
+    [
+      "bronze_sword_crafted"
+    ]
+  ],
+  "rewards": {
+    "experience": 20
+  },
+  "sends_telemetry_event": true
+}

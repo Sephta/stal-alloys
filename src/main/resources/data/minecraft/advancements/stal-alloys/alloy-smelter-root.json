@@ -1,0 +1,36 @@
+{
+  "criteria": {
+    "alloy_smelter_acquired": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stal-alloys:alloy_smelter"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "description": {
+      "translate": "stal-alloys:advancement_root_description_text"
+    },
+    "icon": {
+      "count": 1,
+      "id": "stal-alloys:alloy_smelter"
+    },
+    "title": {
+      "translate": "stal-alloys:advancement_root_title_text"
+    }
+  },
+  "requirements": [
+    [
+      "alloy_smelter_acquired"
+    ]
+  ],
+  "rewards": {
+    "experience": 10
+  },
+  "sends_telemetry_event": true
+}
