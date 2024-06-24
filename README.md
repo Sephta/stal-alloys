@@ -163,6 +163,10 @@ You can also add trims to Stainless Steel Armor AND Brass Armor!
 
 </details>
 
+## Credits and Special Mentions
+
+* Russian translation provided by [@Alexander317](https://github.com/Alexander317)
+
 ## Links
 
 * [GitHub @Sephta](https://github.com/Sephta "User Sephta's GitHub Profile")
