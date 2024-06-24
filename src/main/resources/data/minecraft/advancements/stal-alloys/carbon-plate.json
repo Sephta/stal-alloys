@@ -1,0 +1,36 @@
+{
+  "parent": "minecraft:stal-alloys/alloys-carbon",
+  "criteria": {
+    "carbon_plate_acquired": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stal-alloys:carbon_plate"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "stal-alloys:advancement_carbon_plate_description_text"
+    },
+    "icon": {
+      "count": 1,
+      "id": "stal-alloys:carbon_plate"
+    },
+    "title": {
+      "translate": "stal-alloys:advancement_carbon_plate_title_text"
+    }
+  },
+  "requirements": [
+    [
+      "carbon_plate_acquired"
+    ]
+  ],
+  "rewards": {
+    "experience": 10
+  },
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,36 @@
+{
+  "parent": "minecraft:stal-alloys/alloy-smelter-root",
+  "criteria": {
+    "raw_tin_acquired": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stal-alloys:raw_tin"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "stal-alloys:advancement_alloys_tin_description_text"
+    },
+    "icon": {
+      "count": 1,
+      "id": "stal-alloys:raw_tin"
+    },
+    "title": {
+      "translate": "stal-alloys:advancement_alloys_tin_title_text"
+    }
+  },
+  "requirements": [
+    [
+      "raw_tin_acquired"
+    ]
+  ],
+  "rewards": {
+    "experience": 10
+  },
+  "sends_telemetry_event": true
+}

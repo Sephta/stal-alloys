@@ -1,0 +1,36 @@
+{
+  "parent": "minecraft:stal-alloys/alloys-tin",
+  "criteria": {
+    "bronze_ingot_acquired": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stal-alloys:bronze_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "stal-alloys:advancement_alloys_bronze_description_text"
+    },
+    "icon": {
+      "count": 1,
+      "id": "stal-alloys:bronze_ingot"
+    },
+    "title": {
+      "translate": "stal-alloys:advancement_alloys_bronze_title_text"
+    }
+  },
+  "requirements": [
+    [
+      "bronze_ingot_acquired"
+    ]
+  ],
+  "rewards": {
+    "experience": 10
+  },
+  "sends_telemetry_event": true
+}

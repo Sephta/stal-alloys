@@ -1,0 +1,89 @@
+{
+  "parent": "minecraft:stal-alloys/alloy-smelter-root",
+  "criteria": {
+    "copper_axe_crafted": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stal-alloys:copper_axe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "copper_hoe_crafted": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stal-alloys:copper_hoe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "copper_pickaxe_crafted": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stal-alloys:copper_pickaxe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "copper_shovel_crafted": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stal-alloys:copper_shovel"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "copper_sword_crafted": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stal-alloys:copper_sword"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "stal-alloys:advancement_copper_tools_description_text"
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "stal-alloys:copper_pickaxe"
+    },
+    "title": {
+      "translate": "stal-alloys:advancement_copper_tools_title_text"
+    }
+  },
+  "requirements": [
+    [
+      "copper_sword_crafted"
+    ],
+    [
+      "copper_pickaxe_crafted"
+    ],
+    [
+      "copper_axe_crafted"
+    ],
+    [
+      "copper_shovel_crafted"
+    ],
+    [
+      "copper_hoe_crafted"
+    ]
+  ],
+  "rewards": {
+    "experience": 20
+  },
+  "sends_telemetry_event": true
+}

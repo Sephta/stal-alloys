@@ -1,0 +1,62 @@
+{
+  "parent": "minecraft:stal-alloys/alloys-chromium",
+  "criteria": {
+    "chromium_ingot_acquired": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stal-alloys:chromium_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "stainless_steel_ingot_acquired": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stal-alloys:stainless_steel_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "steel_ingot_acquired": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stal-alloys:steel_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "stal-alloys:advancement_alloys_stainless_steel_description_text"
+    },
+    "icon": {
+      "count": 1,
+      "id": "stal-alloys:stainless_steel_ingot"
+    },
+    "title": {
+      "translate": "stal-alloys:advancement_alloys_stainless_steel_title_text"
+    }
+  },
+  "requirements": [
+    [
+      "chromium_ingot_acquired"
+    ],
+    [
+      "steel_ingot_acquired"
+    ],
+    [
+      "stainless_steel_ingot_acquired"
+    ]
+  ],
+  "rewards": {
+    "experience": 15
+  },
+  "sends_telemetry_event": true
+}

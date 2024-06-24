@@ -1,0 +1,76 @@
+{
+  "parent": "minecraft:stal-alloys/alloys-steel",
+  "criteria": {
+    "steel_axe_crafted": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stal-alloys:steel_axe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "steel_hoe_crafted": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stal-alloys:steel_hoe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "steel_pickaxe_crafted": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stal-alloys:steel_pickaxe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "steel_shovel_crafted": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stal-alloys:steel_shovel"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "stal-alloys:advancement_steel_tools_description_text"
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "stal-alloys:steel_pickaxe"
+    },
+    "title": {
+      "translate": "stal-alloys:advancement_steel_tools_title_text"
+    }
+  },
+  "requirements": [
+    [
+      "steel_pickaxe_crafted"
+    ],
+    [
+      "steel_axe_crafted"
+    ],
+    [
+      "steel_shovel_crafted"
+    ],
+    [
+      "steel_hoe_crafted"
+    ]
+  ],
+  "rewards": {
+    "experience": 20
+  },
+  "sends_telemetry_event": true
+}

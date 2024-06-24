@@ -1,0 +1,76 @@
+{
+  "parent": "minecraft:stal-alloys/alloys-stainless-steel",
+  "criteria": {
+    "stainless_steel_boots_crafted": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stal-alloys:stainless_steel_boots"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "stainless_steel_chestplate_crafted": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stal-alloys:stainless_steel_chestplate"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "stainless_steel_helment_crafted": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stal-alloys:stainless_steel_helmet"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "stainless_steel_leggings_crafted": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stal-alloys:stainless_steel_leggings"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "stal-alloys:advancement_stainless_steel_armor_description_text"
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "stal-alloys:stainless_steel_chestplate"
+    },
+    "title": {
+      "translate": "stal-alloys:advancement_stainless_steel_armor_title_text"
+    }
+  },
+  "requirements": [
+    [
+      "stainless_steel_helment_crafted"
+    ],
+    [
+      "stainless_steel_chestplate_crafted"
+    ],
+    [
+      "stainless_steel_leggings_crafted"
+    ],
+    [
+      "stainless_steel_boots_crafted"
+    ]
+  ],
+  "rewards": {
+    "experience": 35
+  },
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,76 @@
+{
+  "parent": "minecraft:stal-alloys/alloys-brass",
+  "criteria": {
+    "brass_boots_crafted": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stal-alloys:brass_boots"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "brass_chestplate_crafted": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stal-alloys:brass_chestplate"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "brass_helment_crafted": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stal-alloys:brass_helmet"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "brass_leggings_crafted": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stal-alloys:brass_leggings"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "stal-alloys:advancement_brass_armor_description_text"
+    },
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "stal-alloys:brass_chestplate"
+    },
+    "title": {
+      "translate": "stal-alloys:advancement_brass_armor_title_text"
+    }
+  },
+  "requirements": [
+    [
+      "brass_helment_crafted"
+    ],
+    [
+      "brass_chestplate_crafted"
+    ],
+    [
+      "brass_leggings_crafted"
+    ],
+    [
+      "brass_boots_crafted"
+    ]
+  ],
+  "rewards": {
+    "experience": 18
+  },
+  "sends_telemetry_event": true
+}
