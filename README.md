@@ -2,6 +2,18 @@
 
 This mod adds new metals and metal alloys into Minecraft that add more variety to tools, armors, decorative blocks, and resources when mining.
 
+## Credits and Special Mentions
+
+* Russian translation provided by [@Alexander317](https://github.com/Alexander317)
+
+## Links
+
+* [GitHub @Sephta](https://github.com/Sephta "User Sephta's GitHub Profile")
+* [Source Code](https://github.com/Sephta/stal-alloys "STAL Alloys Source Code Repository")
+
+[![Modrinth Page](https://github.com/Sephta/stal-alloys/blob/1.21/imgs/modrinth-badge-dark.svg)](https://modrinth.com/mod/stal-alloys "STAL Alloys Modrinth Page")
+[![Curseforge Page](https://github.com/Sephta/stal-alloys/blob/1.21/imgs/curseforge-badge-dark.svg)](https://www.curseforge.com/minecraft/mc-mods/stal-alloys "STAL Alloys Curseforge Page")
+
 ## Features
 
 ### The Alloy Smelter
@@ -162,15 +174,3 @@ You can also add trims to Stainless Steel Armor AND Brass Armor!
 ![Stainless Steel Boots](https://github.com/Sephta/stal-alloys/raw/1.19.2/imgs/stainless_steel_boots.png "Stainless Steel Boots")
 
 </details>
-
-## Credits and Special Mentions
-
-* Russian translation provided by [@Alexander317](https://github.com/Alexander317)
-
-## Links
-
-* [GitHub @Sephta](https://github.com/Sephta "User Sephta's GitHub Profile")
-* [Source Code](https://github.com/Sephta/stal-alloys "STAL Alloys Source Code Repository")
-
-[![Modrinth Page](https://github.com/Sephta/stal-alloys/blob/1.21/imgs/modrinth-badge-dark.svg)](https://modrinth.com/mod/stal-alloys "STAL Alloys Modrinth Page")
-[![Curseforge Page](https://github.com/Sephta/stal-alloys/blob/1.21/imgs/curseforge-badge-dark.svg)](https://www.curseforge.com/minecraft/mc-mods/stal-alloys "STAL Alloys Curseforge Page")
