@@ -15,12 +15,16 @@
     }
   },
   "display": {
+    "announce_to_chat": true,
     "description": {
       "translate": "stal-alloys:advancement_alloys_carbon_description_text"
     },
+    "frame": "task",
+    "hidden": false,
     "icon": {
       "item": "stal-alloys:raw_carbon"
     },
+    "show_toast": true,
     "title": {
       "translate": "stal-alloys:advancement_alloys_carbon_title_text"
     }

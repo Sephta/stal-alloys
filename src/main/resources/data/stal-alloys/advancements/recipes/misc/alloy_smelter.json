@@ -34,9 +34,9 @@
   },
   "requirements": [
     [
+      "has_the_recipe",
       "has_deepslate",
-      "has_furnace",
-      "has_the_recipe"
+      "has_furnace"
     ]
   ],
   "rewards": {

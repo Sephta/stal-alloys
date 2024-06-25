@@ -15,12 +15,16 @@
     }
   },
   "display": {
+    "announce_to_chat": true,
     "description": {
       "translate": "stal-alloys:advancement_carbon_plate_description_text"
     },
+    "frame": "task",
+    "hidden": false,
     "icon": {
       "item": "stal-alloys:carbon_plate"
     },
+    "show_toast": true,
     "title": {
       "translate": "stal-alloys:advancement_carbon_plate_title_text"
     }

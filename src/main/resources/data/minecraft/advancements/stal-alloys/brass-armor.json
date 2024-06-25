@@ -51,14 +51,17 @@
     }
   },
   "display": {
+    "announce_to_chat": true,
     "description": {
       "translate": "stal-alloys:advancement_brass_armor_description_text"
     },
     "frame": "goal",
+    "hidden": false,
     "icon": {
       "item": "stal-alloys:brass_chestplate",
       "nbt": "{Damage:0}"
     },
+    "show_toast": true,
     "title": {
       "translate": "stal-alloys:advancement_brass_armor_title_text"
     }
