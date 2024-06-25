@@ -171,5 +171,6 @@ You can also add trims to Stainless Steel Armor AND Brass Armor!
 
 * [GitHub @Sephta](https://github.com/Sephta "User Sephta's GitHub Profile")
 * [Source Code](https://github.com/Sephta/stal-alloys "STAL Alloys Source Code Repository")
-* [Modrinth Page](https://modrinth.com/mod/stal-alloys "STAL Alloys Modrinth Page")
-* [Curseforge Page](https://www.curseforge.com/minecraft/mc-mods/stal-alloys "STAL Alloys Curseforge Page")
+
+[![Modrinth Page](https://github.com/Sephta/stal-alloys/blob/1.21/imgs/modrinth-badge-dark.svg)](https://modrinth.com/mod/stal-alloys "STAL Alloys Modrinth Page")
+[![Curseforge Page](https://github.com/Sephta/stal-alloys/blob/1.21/imgs/curseforge-badge-dark.svg)](https://www.curseforge.com/minecraft/mc-mods/stal-alloys "STAL Alloys Curseforge Page")
