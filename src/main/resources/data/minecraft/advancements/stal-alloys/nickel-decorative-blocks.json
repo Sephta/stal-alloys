@@ -39,13 +39,16 @@
     }
   },
   "display": {
+    "announce_to_chat": true,
     "description": {
       "translate": "stal-alloys:advancement_nickel_decor_description_text"
     },
     "frame": "goal",
+    "hidden": false,
     "icon": {
       "item": "stal-alloys:cut_nickel"
     },
+    "show_toast": true,
     "title": {
       "translate": "stal-alloys:advancement_nickel_decor_title_text"
     }

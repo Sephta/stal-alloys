@@ -5,7 +5,6 @@ import java.util.function.Consumer;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricAdvancementProvider;
 import net.minecraft.advancement.Advancement;
-import net.minecraft.advancement.AdvancementEntry;
 import net.minecraft.advancement.AdvancementFrame;
 import net.minecraft.advancement.AdvancementRewards;
 import net.minecraft.advancement.criterion.InventoryChangedCriterion;
@@ -23,8 +22,8 @@ public class StalAlloysAdvancementProvider extends FabricAdvancementProvider {
 
   @SuppressWarnings("unused")
   @Override
-  public void generateAdvancement(Consumer<AdvancementEntry> consumer) {
-    AdvancementEntry alloySmelterRoot = Advancement.Builder.create()
+  public void generateAdvancement(Consumer<Advancement> consumer) {
+    Advancement alloySmelterRoot = Advancement.Builder.create()
       .display(
         StalAlloysBlocks.ALLOY_SMELTER,
         Text.translatable(StalAlloys.MOD_ID + ":" + "advancement_root_title_text"),
@@ -39,7 +38,7 @@ public class StalAlloysAdvancementProvider extends FabricAdvancementProvider {
       .rewards(AdvancementRewards.Builder.experience(10))
       .build(consumer, StalAlloys.MOD_ID + "/alloy-smelter-root");
 
-    AdvancementEntry alloysTin = Advancement.Builder.create().parent(alloySmelterRoot)
+    Advancement alloysTin = Advancement.Builder.create().parent(alloySmelterRoot)
       .display(
         StalAlloysItems.RAW_TIN,
         Text.translatable(StalAlloys.MOD_ID + ":" + "advancement_alloys_tin_title_text"),
@@ -54,7 +53,7 @@ public class StalAlloysAdvancementProvider extends FabricAdvancementProvider {
       .rewards(AdvancementRewards.Builder.experience(10))
       .build(consumer, StalAlloys.MOD_ID + "/alloys-tin");
     
-    AdvancementEntry alloysBronze = Advancement.Builder.create().parent(alloysTin)
+    Advancement alloysBronze = Advancement.Builder.create().parent(alloysTin)
       .display(
         StalAlloysItems.BRONZE_INGOT,
         Text.translatable(StalAlloys.MOD_ID + ":" + "advancement_alloys_bronze_title_text"),
@@ -69,7 +68,7 @@ public class StalAlloysAdvancementProvider extends FabricAdvancementProvider {
       .rewards(AdvancementRewards.Builder.experience(10))
       .build(consumer, StalAlloys.MOD_ID + "/alloys-bronze");
 
-    AdvancementEntry alloysZinc = Advancement.Builder.create().parent(alloySmelterRoot)
+    Advancement alloysZinc = Advancement.Builder.create().parent(alloySmelterRoot)
       .display(
         StalAlloysItems.RAW_ZINC,
         Text.translatable(StalAlloys.MOD_ID + ":" + "advancement_alloys_zinc_title_text"),
@@ -84,7 +83,7 @@ public class StalAlloysAdvancementProvider extends FabricAdvancementProvider {
       .rewards(AdvancementRewards.Builder.experience(10))
       .build(consumer, StalAlloys.MOD_ID + "/alloys-zinc");
     
-    AdvancementEntry alloysBrass = Advancement.Builder.create().parent(alloysZinc)
+    Advancement alloysBrass = Advancement.Builder.create().parent(alloysZinc)
       .display(
         StalAlloysItems.BRASS_INGOT,
         Text.translatable(StalAlloys.MOD_ID + ":" + "advancement_alloys_brass_title_text"),
@@ -99,7 +98,7 @@ public class StalAlloysAdvancementProvider extends FabricAdvancementProvider {
       .rewards(AdvancementRewards.Builder.experience(10))
       .build(consumer, StalAlloys.MOD_ID + "/alloys-brass");
 
-    AdvancementEntry alloysNickel = Advancement.Builder.create().parent(alloySmelterRoot)
+    Advancement alloysNickel = Advancement.Builder.create().parent(alloySmelterRoot)
       .display(
         StalAlloysItems.RAW_NICKEL,
         Text.translatable(StalAlloys.MOD_ID + ":" + "advancement_alloys_nickel_title_text"),
@@ -114,7 +113,7 @@ public class StalAlloysAdvancementProvider extends FabricAdvancementProvider {
       .rewards(AdvancementRewards.Builder.experience(10))
       .build(consumer, StalAlloys.MOD_ID + "/alloys-nickel");
 
-    AdvancementEntry alloysChromium = Advancement.Builder.create().parent(alloySmelterRoot)
+    Advancement alloysChromium = Advancement.Builder.create().parent(alloySmelterRoot)
       .display(
         StalAlloysItems.RAW_CHROMIUM,
         Text.translatable(StalAlloys.MOD_ID + ":" + "advancement_alloys_chromium_title_text"),
@@ -129,7 +128,7 @@ public class StalAlloysAdvancementProvider extends FabricAdvancementProvider {
       .rewards(AdvancementRewards.Builder.experience(10))
       .build(consumer, StalAlloys.MOD_ID + "/alloys-chromium");
 
-    AdvancementEntry alloysStainlessSteel = Advancement.Builder.create().parent(alloysChromium)
+    Advancement alloysStainlessSteel = Advancement.Builder.create().parent(alloysChromium)
       .display(
         StalAlloysItems.STAINLESS_STEEL_INGOT,
         Text.translatable(StalAlloys.MOD_ID + ":" + "advancement_alloys_stainless_steel_title_text"),
@@ -146,7 +145,7 @@ public class StalAlloysAdvancementProvider extends FabricAdvancementProvider {
       .rewards(AdvancementRewards.Builder.experience(15))
       .build(consumer, StalAlloys.MOD_ID + "/alloys-stainless-steel");
     
-    AdvancementEntry alloysCarbon = Advancement.Builder.create().parent(alloySmelterRoot)
+    Advancement alloysCarbon = Advancement.Builder.create().parent(alloySmelterRoot)
       .display(
         StalAlloysItems.RAW_CARBON,
         Text.translatable(StalAlloys.MOD_ID + ":" + "advancement_alloys_carbon_title_text"),
@@ -161,7 +160,7 @@ public class StalAlloysAdvancementProvider extends FabricAdvancementProvider {
       .rewards(AdvancementRewards.Builder.experience(10))
       .build(consumer, StalAlloys.MOD_ID + "/alloys-carbon");
     
-    AdvancementEntry carbonPlates = Advancement.Builder.create().parent(alloysCarbon)
+    Advancement carbonPlates = Advancement.Builder.create().parent(alloysCarbon)
       .display(
         StalAlloysItems.CARBON_PLATE,
         Text.translatable(StalAlloys.MOD_ID + ":" + "advancement_carbon_plate_title_text"),
@@ -176,7 +175,7 @@ public class StalAlloysAdvancementProvider extends FabricAdvancementProvider {
       .rewards(AdvancementRewards.Builder.experience(10))
       .build(consumer, StalAlloys.MOD_ID + "/carbon-plate");
 
-    AdvancementEntry alloysSteel = Advancement.Builder.create().parent(carbonPlates)
+    Advancement alloysSteel = Advancement.Builder.create().parent(carbonPlates)
       .display(
         StalAlloysItems.STEEL_INGOT,
         Text.translatable(StalAlloys.MOD_ID + ":" + "advancement_alloys_steel_title_text"),
@@ -191,7 +190,7 @@ public class StalAlloysAdvancementProvider extends FabricAdvancementProvider {
       .rewards(AdvancementRewards.Builder.experience(10))
       .build(consumer, StalAlloys.MOD_ID + "/alloys-steel");
 
-    AdvancementEntry nickelDecorativeBlocks = Advancement.Builder.create().parent(alloysNickel)
+    Advancement nickelDecorativeBlocks = Advancement.Builder.create().parent(alloysNickel)
       .display(
         StalAlloysBlocks.CUT_NICKEL,
         Text.translatable(StalAlloys.MOD_ID + ":" + "advancement_nickel_decor_title_text"),
@@ -208,7 +207,7 @@ public class StalAlloysAdvancementProvider extends FabricAdvancementProvider {
       .rewards(AdvancementRewards.Builder.experience(20))
       .build(consumer, StalAlloys.MOD_ID + "/nickel-decorative-blocks");
 
-    AdvancementEntry copperTools = Advancement.Builder.create().parent(alloySmelterRoot)
+    Advancement copperTools = Advancement.Builder.create().parent(alloySmelterRoot)
       .display(
         StalAlloysItems.COPPER_PICKAXE,
         Text.translatable(StalAlloys.MOD_ID + ":" + "advancement_copper_tools_title_text"),
@@ -228,7 +227,7 @@ public class StalAlloysAdvancementProvider extends FabricAdvancementProvider {
       .build(consumer, StalAlloys.MOD_ID + "/copper-tools");
 
     
-    AdvancementEntry steelTools = Advancement.Builder.create().parent(alloysSteel)
+    Advancement steelTools = Advancement.Builder.create().parent(alloysSteel)
       .display(
         StalAlloysItems.STEEL_PICKAXE,
         Text.translatable(StalAlloys.MOD_ID + ":" + "advancement_steel_tools_title_text"),
@@ -246,7 +245,7 @@ public class StalAlloysAdvancementProvider extends FabricAdvancementProvider {
       .rewards(AdvancementRewards.Builder.experience(20))
       .build(consumer, StalAlloys.MOD_ID + "/steel-tools");
     
-    AdvancementEntry bronzeWeapons = Advancement.Builder.create().parent(alloysBronze)
+    Advancement bronzeWeapons = Advancement.Builder.create().parent(alloysBronze)
       .display(
         StalAlloysItems.BRONZE_SWORD,
         Text.translatable(StalAlloys.MOD_ID + ":" + "advancement_bronze_weapons_title_text"),
@@ -265,7 +264,7 @@ public class StalAlloysAdvancementProvider extends FabricAdvancementProvider {
       .build(consumer, StalAlloys.MOD_ID + "/bronze-weapons");
 
     
-    AdvancementEntry brassArmor = Advancement.Builder.create().parent(alloysBrass)
+    Advancement brassArmor = Advancement.Builder.create().parent(alloysBrass)
       .display(
         StalAlloysItems.BRASS_CHESTPLATE,
         Text.translatable(StalAlloys.MOD_ID + ":" + "advancement_brass_armor_title_text"),
@@ -283,7 +282,7 @@ public class StalAlloysAdvancementProvider extends FabricAdvancementProvider {
       .rewards(AdvancementRewards.Builder.experience(18))
       .build(consumer, StalAlloys.MOD_ID + "/brass-armor");
 
-    AdvancementEntry stainlessSteelArmor = Advancement.Builder.create().parent(alloysStainlessSteel)
+    Advancement stainlessSteelArmor = Advancement.Builder.create().parent(alloysStainlessSteel)
       .display(
         StalAlloysItems.STAINLESS_STEEL_CHESTPLATE,
         Text.translatable(StalAlloys.MOD_ID + ":" + "advancement_stainless_steel_armor_title_text"),
