@@ -14,13 +14,17 @@
     }
   },
   "display": {
+    "announce_to_chat": true,
     "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
     "description": {
       "translate": "stal-alloys:advancement_root_description_text"
     },
+    "frame": "task",
+    "hidden": false,
     "icon": {
       "item": "stal-alloys:alloy_smelter"
     },
+    "show_toast": true,
     "title": {
       "translate": "stal-alloys:advancement_root_title_text"
     }

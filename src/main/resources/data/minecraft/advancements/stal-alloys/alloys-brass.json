@@ -15,12 +15,16 @@
     }
   },
   "display": {
+    "announce_to_chat": true,
     "description": {
       "translate": "stal-alloys:advancement_alloys_brass_description_text"
     },
+    "frame": "task",
+    "hidden": false,
     "icon": {
       "item": "stal-alloys:brass_ingot"
     },
+    "show_toast": true,
     "title": {
       "translate": "stal-alloys:advancement_alloys_brass_title_text"
     }
