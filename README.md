@@ -1,10 +1,10 @@
+<p align="center">
+  <img src="https://github.com/Sephta/stal-alloys/blob/1.21/src/main/resources/assets/stal-alloys/icon.png" />
+</p>
+
 # STAL Alloys
 
 This mod adds new metals and metal alloys into Minecraft that add more variety to tools, armors, decorative blocks, and resources when mining.
-
-## Credits and Special Mentions
-
-* Russian translation provided by [@Alexander317](https://github.com/Alexander317)
 
 ## Links
 
@@ -13,6 +13,10 @@ This mod adds new metals and metal alloys into Minecraft that add more variety t
 
 [![Modrinth Page](https://github.com/Sephta/stal-alloys/blob/1.21/imgs/modrinth-badge-dark.svg)](https://modrinth.com/mod/stal-alloys "STAL Alloys Modrinth Page")
 [![Curseforge Page](https://github.com/Sephta/stal-alloys/blob/1.21/imgs/curseforge-badge-dark.svg)](https://www.curseforge.com/minecraft/mc-mods/stal-alloys "STAL Alloys Curseforge Page")
+
+## Credits and Special Mentions
+
+* Russian translation provided by [@Alexander317](https://github.com/Alexander317)
 
 ## Features
 
