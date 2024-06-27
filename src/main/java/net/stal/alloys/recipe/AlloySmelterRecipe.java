@@ -71,6 +71,13 @@ public class AlloySmelterRecipe implements Recipe<SimpleInventory> {
   }
 
   @Override
+  public DefaultedList<Ingredient> getIngredients() {
+    DefaultedList<Ingredient> list = DefaultedList.ofSize(this.mRecipeItems.size());
+    list.addAll(mRecipeItems);
+    return list;
+  }
+
+  @Override
   public ItemStack getResult(WrapperLookup registriesLookup) {
     return mOutput.copy();
   }
