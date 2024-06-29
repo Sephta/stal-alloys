@@ -13,6 +13,18 @@ import net.stal.alloys.screen.AlloySmelterScreen;
 
 public class StalAlloysREIClientPlugin implements REIClientPlugin {
 
+  private static enum ClickableBoundary {
+    X(75), 
+    Y(30), 
+    WIDTH(20), 
+    HEIGHT(30); 
+
+    private final int value;
+    private ClickableBoundary(int value) {
+      this.value = value;
+    }
+  }
+
   @Override
   public void registerCategories(CategoryRegistry registry) {
     registry.add(new AlloySmelterCategory());
@@ -27,7 +39,16 @@ public class StalAlloysREIClientPlugin implements REIClientPlugin {
 
   @Override
   public void registerScreens(ScreenRegistry registry) {
-    registry.registerClickArea(screen -> new Rectangle(75, 30, 20, 30), AlloySmelterScreen.class, AlloySmelterCategory.ALLOY_SMELTER);
+    registry.registerClickArea(
+      (screen) -> {
+        return new Rectangle(
+          ClickableBoundary.X.value, 
+          ClickableBoundary.Y.value, 
+          ClickableBoundary.WIDTH.value, 
+          ClickableBoundary.HEIGHT.value
+        );
+      }, 
+      AlloySmelterScreen.class, AlloySmelterCategory.ALLOY_SMELTER
+    );
   }
-  
 }
