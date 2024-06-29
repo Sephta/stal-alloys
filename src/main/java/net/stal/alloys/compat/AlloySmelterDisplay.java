@@ -12,6 +12,8 @@ import net.minecraft.recipe.RecipeEntry;
 import net.stal.alloys.recipe.AlloySmelterRecipe;
 
 public class AlloySmelterDisplay extends BasicDisplay {
+  private int experience;
+  private int cookingTime;
 
   public AlloySmelterDisplay(List<EntryIngredient> inputs, List<EntryIngredient> outputs) {
     super(inputs, outputs);
@@ -19,6 +21,9 @@ public class AlloySmelterDisplay extends BasicDisplay {
 
   public AlloySmelterDisplay(RecipeEntry<AlloySmelterRecipe> recipe) {
     super(getInputList(recipe.value()), getOutputList(recipe.value()));
+
+    experience = recipe.value().getExperience();
+    cookingTime = recipe.value().getCookingTime();
   }
 
   private static List<EntryIngredient> getInputList(AlloySmelterRecipe recipe) {
@@ -43,6 +48,14 @@ public class AlloySmelterDisplay extends BasicDisplay {
   @Override
   public CategoryIdentifier<AlloySmelterDisplay> getCategoryIdentifier() {
     return AlloySmelterCategory.ALLOY_SMELTER;
+  }
+
+  public int getExperience() {
+    return experience;
+  }
+
+  public int getCookingTime() {
+    return cookingTime;
   }
   
 }
