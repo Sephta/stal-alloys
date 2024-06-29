@@ -8,7 +8,6 @@ import me.shedaniel.rei.api.common.category.CategoryIdentifier;
 import me.shedaniel.rei.api.common.display.basic.BasicDisplay;
 import me.shedaniel.rei.api.common.entry.EntryIngredient;
 import me.shedaniel.rei.api.common.util.EntryIngredients;
-import net.minecraft.recipe.RecipeEntry;
 import net.stal.alloys.recipe.AlloySmelterRecipe;
 
 public class AlloySmelterDisplay extends BasicDisplay {
@@ -19,11 +18,11 @@ public class AlloySmelterDisplay extends BasicDisplay {
     super(inputs, outputs);
   }
 
-  public AlloySmelterDisplay(RecipeEntry<AlloySmelterRecipe> recipe) {
-    super(getInputList(recipe.value()), getOutputList(recipe.value()));
+  public AlloySmelterDisplay(AlloySmelterRecipe recipe) {
+    super(getInputList(recipe), getOutputList(recipe));
 
-    experience = recipe.value().getExperience();
-    cookingTime = recipe.value().getCookingTime();
+    experience = recipe.getExperience();
+    cookingTime = recipe.getCookingTime();
   }
 
   private static List<EntryIngredient> getInputList(AlloySmelterRecipe recipe) {
@@ -40,7 +39,7 @@ public class AlloySmelterDisplay extends BasicDisplay {
     if (recipe == null) return Collections.emptyList();
 
     List<EntryIngredient> outputs = new ArrayList<>();
-    outputs.add(EntryIngredients.of(recipe.getResult(null)));
+    outputs.add(EntryIngredients.of(recipe.getOutput(null)));
 
     return outputs;
   }
