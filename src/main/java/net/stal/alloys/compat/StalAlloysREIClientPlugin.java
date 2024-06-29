@@ -8,7 +8,6 @@ import me.shedaniel.rei.api.client.registry.screen.ScreenRegistry;
 import me.shedaniel.rei.api.common.util.EntryStacks;
 import net.stal.alloys.block.StalAlloysBlocks;
 import net.stal.alloys.recipe.AlloySmelterRecipe;
-import net.stal.alloys.recipe.AlloySmelterRecipe.AlloySmelterRecipeType;
 import net.stal.alloys.screen.AlloySmelterScreen;
 
 public class StalAlloysREIClientPlugin implements REIClientPlugin {
@@ -34,7 +33,7 @@ public class StalAlloysREIClientPlugin implements REIClientPlugin {
 
   @Override
   public void registerDisplays(DisplayRegistry registry) {
-    registry.registerRecipeFiller(AlloySmelterRecipe.class, AlloySmelterRecipeType.INSTANCE, AlloySmelterDisplay::new);
+    registry.registerRecipeFiller(AlloySmelterRecipe.class, AlloySmelterRecipe.Type.INSTANCE, AlloySmelterDisplay::new);
   }
 
   @Override
